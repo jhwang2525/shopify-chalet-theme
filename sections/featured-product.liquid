@@ -1516,3 +1516,12 @@
   ]
 }
 {% endschema %}
+{% if product %}
+<script class="gpo-featured-product">
+  window.GPOConfigs = window.GPOConfigs || {}
+  window.GPOConfigs.featuredProduct = {{ product | json }} || null
+  window.GPOConfigs.featuredProduct.collections = {{ product.collections | map: 'id' | json }}
+</script>
+{% endif %}
+
+<!-- GPO installed -->
