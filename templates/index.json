@@ -108,32 +108,39 @@
         "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "chalet-tops"
+            "collection": "chalet-tops-1"
           }
         },
         "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "chalet-bottoms"
+            "collection": "chalet-dresses-1"
           }
         },
         "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "chalet-dresses"
+            "collection": "beau-jours-tops-1"
+          }
+        },
+        "84a5dbcb-a7e1-4114-b80f-e7c37742fc39": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beau-jours-dresses"
           }
         }
       },
       "block_order": [
         "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-0",
         "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-1",
-        "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-2"
+        "template--19327716622613__be053aae-cdc9-4961-9279-5153fff5b684-168690225737aace4c-2",
+        "84a5dbcb-a7e1-4114-b80f-e7c37742fc39"
       ],
       "settings": {
         "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
         "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "1",
