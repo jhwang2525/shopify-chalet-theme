@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "body {background-image: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0767\/5379\/7397\/files\/B0001937_Large_5a300fd0-0e80-4235-96ce-66f55591bfcc.jpg?v=1687944086) !important; background-color: transparent !important; background-position: top left !important; background-size: auto !important;}"
+
       ],
       "settings": {
         "padding_top": 28,
