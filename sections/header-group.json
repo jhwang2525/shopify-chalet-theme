@@ -8,10 +8,10 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Welcoming Warmth: Check out our latest new arrivals",
             "text_alignment": "center",
-            "color_scheme": "background-1",
-            "link": ""
+            "color_scheme": "background-2",
+            "link": "shopify:\/\/collections\/new-arrivals-1"
           }
         }
       },
