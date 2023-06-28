@@ -40,7 +40,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "chalet-main-section",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -61,26 +61,10 @@
     },
     "6f9b3a89-b4ec-42eb-af46-8cb616648909": {
       "type": "image-banner",
-      "blocks": {
-        "f9c6e186-53b1-4b15-a6bf-d5d597013b72": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "f9c6e186-53b1-4b15-a6bf-d5d597013b72"
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-08_at_1.50.41_AM.png",
-        "image_overlay_opacity": 40,
-        "image_height": "small",
+        "image": "shopify:\/\/shop_images\/IMG_1708_2_Large_403a3a4d-01af-442d-bcd9-6f2f07e2669d.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -99,7 +83,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "beau-jours-main-section",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
