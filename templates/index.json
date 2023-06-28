@@ -35,7 +35,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "New Arrivals",
+        "title": "New Chalet",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -78,15 +78,15 @@
     "6925ab9d-05c0-4ba1-a8e2-653d6184d2ef": {
       "type": "featured-collection",
       "settings": {
-        "title": "Most Loved By You",
+        "title": "New Collection Highlights",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Don't miss these just-launched styles.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "beau-jours-main-section",
         "products_to_show": 4,
         "columns_desktop": 4,
-        "full_width": false,
+        "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
