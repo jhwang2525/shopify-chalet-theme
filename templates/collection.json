@@ -30,7 +30,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".card-information {font-size: 8px;}"
+
       ],
       "settings": {
         "products_per_page": 16,
