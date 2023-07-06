@@ -1,8 +1,58 @@
 {
   "sections": {
+    "5d1859d6-9001-49ed-98aa-daac4fdf9972": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--19327717015829__5d1859d6-9001-49ed-98aa-daac4fdf9972-16886234948578c40b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--19327717015829__5d1859d6-9001-49ed-98aa-daac4fdf9972-16886234948578c40b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--19327717015829__5d1859d6-9001-49ed-98aa-daac4fdf9972-16886234948578c40b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19327717015829__5d1859d6-9001-49ed-98aa-daac4fdf9972-16886234948578c40b-0",
+        "template--19327717015829__5d1859d6-9001-49ed-98aa-daac4fdf9972-16886234948578c40b-1",
+        "template--19327717015829__5d1859d6-9001-49ed-98aa-daac4fdf9972-16886234948578c40b-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
+      "custom_css": [
+        ".collection-hero__title {font-size: 16px;}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -15,12 +65,12 @@
         "products_per_page": 16,
         "columns_desktop": 4,
         "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "drawer",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
@@ -29,6 +79,7 @@
     }
   },
   "order": [
+    "5d1859d6-9001-49ed-98aa-daac4fdf9972",
     "banner",
     "product-grid"
   ]
