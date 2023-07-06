@@ -4,6 +4,18 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "6132e0fc-b4a8-43cb-9227-798d47fc06ae": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "6132e0fc-b4a8-43cb-9227-798d47fc06ae"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
