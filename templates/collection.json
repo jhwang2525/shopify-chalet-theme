@@ -19,7 +19,7 @@
     "banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-hero__title {font-size: 16px; font-weight: 500;}"
+        ".collection-hero__title {font-size: 16px;}"
       ],
       "settings": {
         "show_collection_description": true,
