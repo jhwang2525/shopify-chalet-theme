@@ -32,6 +32,36 @@
         "show_text_below": false
       }
     },
+    "2b93107e-4fe0-4e94-9fb2-9308b7bf0836": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19327716622613__2b93107e-4fe0-4e94-9fb2-9308b7bf0836-168862487154d65964-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Small-Scale Local Production",
+            "heading_size": "h2"
+          }
+        },
+        "template--19327716622613__2b93107e-4fe0-4e94-9fb2-9308b7bf0836-168862487154d65964-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Our garments are ethically crafted in the EU in limited batches to avoid overproduction and take care of our planet.<\/h5>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19327716622613__2b93107e-4fe0-4e94-9fb2-9308b7bf0836-168862487154d65964-0",
+        "template--19327716622613__2b93107e-4fe0-4e94-9fb2-9308b7bf0836-168862487154d65964-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -152,6 +182,7 @@
   },
   "order": [
     "image_banner",
+    "2b93107e-4fe0-4e94-9fb2-9308b7bf0836",
     "featured_collection",
     "6f9b3a89-b4ec-42eb-af46-8cb616648909",
     "6925ab9d-05c0-4ba1-a8e2-653d6184d2ef",
