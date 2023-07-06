@@ -190,11 +190,30 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "52901005-ea11-453f-96b2-62ae59894960": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitledw.jpg",
+            "heading": "OUR BEST SEASON SALE",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/collections\/all-sale",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "template--19327716622613__e9087b10-f810-464b-a06c-50ae004a1470-16886252009c230448-0",
-        "template--19327716622613__e9087b10-f810-464b-a06c-50ae004a1470-16886252009c230448-1"
+        "template--19327716622613__e9087b10-f810-464b-a06c-50ae004a1470-16886252009c230448-1",
+        "52901005-ea11-453f-96b2-62ae59894960"
       ],
       "settings": {
         "layout": "full_bleed",
