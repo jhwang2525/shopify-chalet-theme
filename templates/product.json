@@ -47,6 +47,9 @@
         "buy_buttons",
         "description"
       ],
+      "custom_css": [
+        "h1 {font-size: 25px;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "media_size": "medium",
