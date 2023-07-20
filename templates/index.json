@@ -26,6 +26,9 @@
         "519ea0c1-1427-45fe-a96c-00a8ef1854d6",
         "button"
       ],
+      "custom_css": [
+        ".p {position: absolute; left: 5px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2023-06-08_at_1.50.41_AM.png",
         "image_overlay_opacity": 40,
