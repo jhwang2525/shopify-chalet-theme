@@ -247,21 +247,21 @@
           "type": "product",
           "settings": {
             "product": "myra-jacket-sk75230-1",
-            "second_image": true
+            "second_image": false
           }
         },
         "ef659a59-c03e-49cd-84f7-312489a6c454": {
           "type": "product",
           "settings": {
             "product": "charlie-top-t72286-1",
-            "second_image": true
+            "second_image": false
           }
         },
         "dd3d1e4b-0c0e-4c0e-9b53-ee241c329733": {
           "type": "product",
           "settings": {
             "product": "adella-top-cm72517-1",
-            "second_image": true
+            "second_image": false
           }
         }
       },
@@ -276,7 +276,7 @@
       "settings": {
         "heading": "Recommended for you",
         "heading_size": "h2",
-        "desktop_layout": "left",
+        "desktop_layout": "right",
         "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
