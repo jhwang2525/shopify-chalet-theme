@@ -166,25 +166,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "6f9b3a89-b4ec-42eb-af46-8cb616648909": {
-      "type": "image-banner",
-      "custom_css": [
-        "@media screen and (min-width: 750px) {.banner {min-height: 80rem !important; flex-direction: row; }}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1708_2_Large_403a3a4d-01af-442d-bcd9-6f2f07e2669d.jpg",
-        "image_overlay_opacity": 20,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "be053aae-cdc9-4961-9279-5153fff5b684": {
       "type": "collection-list",
       "blocks": {
@@ -375,7 +356,6 @@
     "2b93107e-4fe0-4e94-9fb2-9308b7bf0836",
     "featured_collection",
     "4481e86a-7d1e-43d9-b9e7-8a4291666cb6",
-    "6f9b3a89-b4ec-42eb-af46-8cb616648909",
     "be053aae-cdc9-4961-9279-5153fff5b684",
     "be0ab39c-8ba2-405e-89eb-099fad82f7c8",
     "3818e3fc-00cf-4726-afb1-0d93a2a78816",
