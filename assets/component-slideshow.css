@@ -204,3 +204,6 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(.8)
 }
+slideshow-component .slideshow.banner {
+    height: 300px !important;
+}
