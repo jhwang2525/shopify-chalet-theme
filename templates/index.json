@@ -112,10 +112,29 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "e45bb404-8bad-4f8f-8120-8afce96ef59f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0250.jpg",
+            "heading": "Organic and low-impact materials",
+            "heading_size": "h1",
+            "subheading": "We make our clothes from breathable  organic, recycled and low-impact materials.",
+            "button_label": "SHOP NOW",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "088c3f01-31f0-4296-a7bc-d44092283b44"
+        "088c3f01-31f0-4296-a7bc-d44092283b44",
+        "e45bb404-8bad-4f8f-8120-8afce96ef59f"
       ],
       "settings": {
         "layout": "full_bleed",
