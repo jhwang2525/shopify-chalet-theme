@@ -7,7 +7,7 @@
           "type": "text",
           "settings": {
             "text": "Our Spring pieces trend to add to your wardrobe",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button": {
