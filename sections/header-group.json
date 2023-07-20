@@ -1,0 +1,63 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcoming Warmth: Check out our latest new arrivals",
+            "text_alignment": "center",
+            "color_scheme": "background-2",
+            "link": "shopify:\/\/collections\/new-arrivals-1"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+      }
+    },
+    "955e1b2f-5398-4363-994d-2569113c82fb": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {width: 24px;}",
+        "span {font-size: 20px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<span>\nMADE IN USA <\/span> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0767\/5379\/7397\/files\/Amreican_Heart.webp?v=1687944618\"",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "955e1b2f-5398-4363-994d-2569113c82fb",
+    "header"
+  ]
+}
