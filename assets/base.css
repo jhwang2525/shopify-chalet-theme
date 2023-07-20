@@ -3178,3 +3178,8 @@ max-width: 100%;
     float: left !important;
 }
 
+.slideshow__text.banner__box {
+
+    max-width: 74.5rem !important;
+
+}

@@ -92,6 +92,42 @@
         "padding_bottom": 36
       }
     },
+    "4481e86a-7d1e-43d9-b9e7-8a4291666cb6": {
+      "type": "slideshow",
+      "blocks": {
+        "088c3f01-31f0-4296-a7bc-d44092283b44": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0265.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "Our garments are ethically crafted in limited batches to avoid overproduction",
+            "button_label": "asdasdasdasd",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "088c3f01-31f0-4296-a7bc-d44092283b44"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "6f9b3a89-b4ec-42eb-af46-8cb616648909": {
       "type": "image-banner",
       "custom_css": [
@@ -300,6 +336,7 @@
     "image_banner",
     "2b93107e-4fe0-4e94-9fb2-9308b7bf0836",
     "featured_collection",
+    "4481e86a-7d1e-43d9-b9e7-8a4291666cb6",
     "6f9b3a89-b4ec-42eb-af46-8cb616648909",
     "be053aae-cdc9-4961-9279-5153fff5b684",
     "be0ab39c-8ba2-405e-89eb-099fad82f7c8",
