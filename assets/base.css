@@ -3177,3 +3177,15 @@ max-width: 100%;
     align-items: flex-start;
     float: left !important;
 }
+
+.custom-button {
+  display: block;
+  width: 200px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  background-color: #000000; /* Replace with your desired background color */
+  color: #ffffff; /* Replace with your desired text color */
+  text-align: center;
+  line-height: 40px; /* Adjust the line-height to vertically center the text */
+  text-decoration: none;
+  margin: 20px auto; /* Adjust the margin as needed */
+}
