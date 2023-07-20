@@ -3,10 +3,17 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "519ea0c1-1427-45fe-a96c-00a8ef1854d6": {
+          "type": "text",
+          "settings": {
+            "text": "Our Spring pieces trend to add to your wardrobe",
+            "text_style": "body"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop New Arrivals",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -16,13 +23,14 @@
         }
       },
       "block_order": [
+        "519ea0c1-1427-45fe-a96c-00a8ef1854d6",
         "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2023-06-08_at_1.50.41_AM.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
