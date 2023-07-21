@@ -375,7 +375,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Together, we make sustainability the trend that never goes out of style. <\/p>",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         },
         "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-button-1": {
@@ -390,6 +390,9 @@
         "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-heading-1",
         "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-text-1",
         "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-button-1"
+      ],
+      "custom_css": [
+        "p {font-family: kudryashev-d-contrast, serif; color: black; font-size: 50px; font-weight: 100;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_1722_1.jpg",
