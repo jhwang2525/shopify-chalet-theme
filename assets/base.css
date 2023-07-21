@@ -3183,3 +3183,15 @@ max-width: 100%;
     max-width: 74.5rem !important;
 
 }
+.footer-block.grid__item.footer-block--menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+} 
+
+.footer__content-top.page-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
