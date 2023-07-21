@@ -514,3 +514,7 @@
     }
   }
 }
+
+.footer-block grid__item footer-block--menu {
+  margin-right: 3rem !important;
+}
