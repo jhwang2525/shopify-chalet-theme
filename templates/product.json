@@ -67,6 +67,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".h2 {font-size: 18px;}"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -79,7 +82,7 @@
         "show_rating": false,
         "columns_mobile": "2",
         "padding_top": 36,
-        "padding_bottom": 28
+        "padding_bottom": 24
       }
     }
   },
