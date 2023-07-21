@@ -1,0 +1,80 @@
+{% if content_for_header contains 'store-locator' %}
+              {% include 'bss-store-locator-data' %}
+              <script id="bss-locator-config-data">
+              if (typeof BSS_SL == 'undefined') {
+                  var BSS_SL = {};
+                  var searchResult = []
+              }
+              BSS_SL.storeId = 2666;
+              BSS_SL.configData = [];
+              BSS_SL.apiKey = null;
+              BSS_SL.translation = "{\"your_location\":\"Your Location\",\"radius\":\"Radius\",\"tag\":\"Tag\",\"search\":\"Search\",\"store\":\"Stores\",\"find_my_location\": \"Find my location\", \"schedule\": \"Schedule\",\"enter_your_location\": \"Enter your location\", \"list\": \"List\", \"map\": \"Map\", \"monday\": \"MONDAY\", \"tuesday\": \"TUESDAY\", \"wednesday\": \"WEDNESDAY\",\"thursday\": \"THURSDAY\", \"friday\": \"FRIDAY\", \"saturday\": \"SATURDAY\", \"sunday\": \"SUNDAY\", \"allday\": \"ALLDAY\",\"product\": \"Product\",\"dayoff\":\"DAYOFF\",\"storeResult\":\"store results\",\"distance\":\"Distance\",\"notFound\":\"Not found any stores\",\"noLimit\":\"No limit\",\"youAreHere\":\"You are here\",\"showing\":\"Showing\",\"all\":\"All\",\"filterByCountry\":\"Filter by country\",\"searchByLocation\":\"Location\",\"searchByPhone\":\"Phone\",\"searchByStoreName\":\"Store name\",\"enterPhoneNumber\":\"Enter phone number\",\"enterStoreName\":\"Enter store name\"}";
+              BSS_SL.planCode = "free";
+              BSS_SL.zoom_map = "7";
+              BSS_SL.storeLocatorServer = 'https://store-locator-api.bsscommerce.com';
+              BSS_SL.scheduleMenu = 1;
+              BSS_SL.addressMenu = 1;
+              BSS_SL.phoneMenu = 1;
+              BSS_SL.faxMenu = 1;
+              BSS_SL.emailMenu = 1;
+              BSS_SL.websiteMenu = 1;
+              BSS_SL.scheduleMap = 1;
+              BSS_SL.addressMap = 1;
+              BSS_SL.phoneMap = 1;
+              BSS_SL.faxMap = 1;
+              BSS_SL.emailMap = 1;
+              BSS_SL.websiteMap = 1;
+              BSS_SL.autoDetectAddress = 0;
+              BSS_SL.radiusSearch = 0;
+              BSS_SL.tagSearch = 1;
+              BSS_SL.tagOption = 0;
+              BSS_SL.countryOption = 0;
+              BSS_SL.showCountryFilter = 0;
+              BSS_SL.selectLocation = 1;
+              BSS_SL.selectPhone = 0;
+              BSS_SL.selectStoreName = 0;
+              BSS_SL.template = 4;
+              BSS_SL.layout = 1;
+              BSS_SL.distanceUnit = "miles";
+              BSS_SL.zoomCountLocation = 0;
+              BSS_SL.customFieldMap = 1;
+              BSS_SL.customFieldMenu = 1;
+              BSS_SL.optimizeLoadMarker = 0;
+              BSS_SL.defaultLat = null;
+              BSS_SL.defaultLng = null;
+              BSS_SL.manual_default_address = 0;
+              BSS_SL.enablePopup = 0;
+              BSS_SL.pages = "index,cart,product,list-collections,search,blog,all_articles,all_custom_pages";
+              BSS_SL.icon = "https://store-locator.bsscommerce.com/image/location-pin.svg";
+              BSS_SL.showSearchBar = 0;
+              BSS_SL.showOnMobile = 1;
+              BSS_SL.showOnDesktop = 1;
+              BSS_SL.mobilePosition = "bottom-right";
+              BSS_SL.desktopPosition = "bottom-right";
+              BSS_SL.createdAt = "2023-07-21T08:58:00.000Z";
+              </script>
+              {% endif %}
+              <script>
+              function fn(){
+                if (typeof BSS_SL.configData == 'undefined') {
+                    if(window.location.pathname == '/pages/store-locator'){
+                        document.getElementById("PageContainer").remove();
+                    }
+                }
+              }
+            if (document.readyState === "complete" || document.readyState === "interactive") {
+                setTimeout(fn, 1);
+            } else {
+            document.addEventListener("DOMContentLoaded", fn);
+            }
+
+          </script>
+        {% if request.host == 'supersports.com.vn' and request.path contains 'locator' %}
+            <script
+                id="bss-store-locator-cluster"
+                src={{ 'markerclusterer.js' | asset_url  }}
+            ></script>
+        {% endif %}
+        {% if request.host != 'supersports.com.vn' %}
+            <script id="bss-store-locator-cluster" src='https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js'></script>
+        {% endif %}
