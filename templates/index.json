@@ -361,57 +361,49 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "55aa8b49-67cc-407f-a522-63daeab17d2b": {
-      "type": "multicolumn",
+    "5a6ff8c0-5acb-461e-a770-6e327e517692": {
+      "type": "image-with-text",
       "blocks": {
-        "template--19327716622613__55aa8b49-67cc-407f-a522-63daeab17d2b-column-1": {
-          "type": "column",
+        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-heading-1": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Sustainable Luxury",
+            "heading_size": "h2"
           }
         },
-        "template--19327716622613__55aa8b49-67cc-407f-a522-63daeab17d2b-column-2": {
-          "type": "column",
+        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-text-1": {
+          "type": "text",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Together, we make sustainability the trend that never goes out of style. <\/p>",
+            "text_style": "subtitle"
           }
         },
-        "template--19327716622613__55aa8b49-67cc-407f-a522-63daeab17d2b-column-3": {
-          "type": "column",
+        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-button-1": {
+          "type": "button",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "template--19327716622613__55aa8b49-67cc-407f-a522-63daeab17d2b-column-1",
-        "template--19327716622613__55aa8b49-67cc-407f-a522-63daeab17d2b-column-2",
-        "template--19327716622613__55aa8b49-67cc-407f-a522-63daeab17d2b-column-3"
+        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-heading-1",
+        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-text-1",
+        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-button-1"
       ],
       "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "image": "shopify:\/\/shop_images\/IMG_1722_1.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -424,6 +416,6 @@
     "be0ab39c-8ba2-405e-89eb-099fad82f7c8",
     "3818e3fc-00cf-4726-afb1-0d93a2a78816",
     "e9087b10-f810-464b-a06c-50ae004a1470",
-    "55aa8b49-67cc-407f-a522-63daeab17d2b"
+    "5a6ff8c0-5acb-461e-a770-6e327e517692"
   ]
 }
