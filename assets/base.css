@@ -3158,7 +3158,7 @@ justify-content: flex-start;
 }
 
 .footer__content-top.page-width {
-max-width: 80%;
+max-width: 100%;
 }
 
 @media(min-width:989px){
