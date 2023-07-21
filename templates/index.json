@@ -360,54 +360,6 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
-    },
-    "5a6ff8c0-5acb-461e-a770-6e327e517692": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainable Luxury",
-            "heading_size": "h2"
-          }
-        },
-        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Together, we make sustainability the trend that never goes out of style. <\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-heading-1",
-        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-text-1",
-        "template--19327716622613__5a6ff8c0-5acb-461e-a770-6e327e517692-button-1"
-      ],
-      "custom_css": [
-        "p {font-family: kudryashev-d-contrast, serif; color: black; font-size: 50px; font-weight: 100;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1722_1.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -418,7 +370,6 @@
     "be053aae-cdc9-4961-9279-5153fff5b684",
     "be0ab39c-8ba2-405e-89eb-099fad82f7c8",
     "3818e3fc-00cf-4726-afb1-0d93a2a78816",
-    "e9087b10-f810-464b-a06c-50ae004a1470",
-    "5a6ff8c0-5acb-461e-a770-6e327e517692"
+    "e9087b10-f810-464b-a06c-50ae004a1470"
   ]
 }
