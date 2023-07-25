@@ -40,7 +40,7 @@
     "0d6714f9-6d9e-4a76-91f6-74c505f64320": {
       "type": "image-banner",
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/1.jpg",
+        "image_2": "shopify:\/\/shop_images\/Copy_of_Copy_of_Copy_of_Copy_of_Crinkle_Jersey_SS23_4.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -56,6 +56,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
+        "h1 {display: none;}",
         "h2 {font-size: 30px; line-height: 1px;}",
         "span {font-size: 15px;}"
       ],
