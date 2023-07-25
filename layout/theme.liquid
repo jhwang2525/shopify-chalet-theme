@@ -238,7 +238,17 @@
     </script>
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
 {% include 'bss-store-locator-header' %}
-                </head>
+
+    <style>
+.field:after,
+.field__input {
+    border: 1px solid grey
+}
+.field__input:focus {
+    box-shadow: unset !important;
+}
+</style>
+  </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
