@@ -2,24 +2,69 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "9784f752-9a05-4fb3-8d5b-059c6068b3b8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19327716720917__9784f752-9a05-4fb3-8d5b-059c6068b3b8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact",
+            "heading_size": "h1"
+          }
+        },
+        "template--19327716720917__9784f752-9a05-4fb3-8d5b-059c6068b3b8-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Email \/ Call Us! We're here for your fit, feel, and styling questions big and small.Connect with a member of our team.<\/h5>"
+          }
+        },
+        "e7014053-645b-4238-9023-f5cf4af72be8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chalet Et Ceci<\/p><p>2336 Garfield Ave. Commerce, CA 90040<\/p><p>323-526-1623 (M-F 8am -5pm PST)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19327716720917__9784f752-9a05-4fb3-8d5b-059c6068b3b8-heading-1",
+        "template--19327716720917__9784f752-9a05-4fb3-8d5b-059c6068b3b8-text-1",
+        "e7014053-645b-4238-9023-f5cf4af72be8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     },
     "form": {
       "type": "contact-form",
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "color_scheme": "background-1",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
+    "9784f752-9a05-4fb3-8d5b-059c6068b3b8",
     "form"
   ]
 }
