@@ -1,17 +1,73 @@
 {
   "sections": {
+    "8de98f62-8b6b-4612-bcdf-d75bf01dbe69": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to Chalet Et Ceci",
+            "heading_size": "h2"
+          }
+        },
+        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop Chalet et Ceci believes in creating stylish, flattering fit and comfortable clothing without sacrificing our high quality and unique style.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-heading-1",
+        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-07-25_at_1.02.52_AM.png",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 32
+      }
+    },
+    "0d6714f9-6d9e-4a76-91f6-74c505f64320": {
+      "type": "image-banner",
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "custom_css": [
-
+        "h2 {font-size: 30px; line-height: 1px;}",
+        "span {font-size: 15px;}"
       ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     }
   },
   "order": [
+    "8de98f62-8b6b-4612-bcdf-d75bf01dbe69",
+    "0d6714f9-6d9e-4a76-91f6-74c505f64320",
     "main"
   ]
 }
