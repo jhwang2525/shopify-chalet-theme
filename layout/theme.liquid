@@ -248,7 +248,8 @@
     box-shadow: unset !important;
 }
 </style>
-  </head>
+  {% include 'bss-store-locator-popup' %}
+                </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -306,5 +307,5 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     
-  {% if content_for_header contains 'store-locator-api.bsscommerce.com' %}{% include 'bss-store-locator-js-liquid' %}{% endif %}</body>
+  {% if content_for_header contains 'store-locator-api.bsscommerce.com' %}{% include 'bss-store-locator-js-liquid' %}{% endif %}{% if content_for_header contains 'https://store-locator-api.bsscommerce.com' %}{% include 'bss-store-locator-js-liquid' %}{% endif %}</body>
 </html>
