@@ -37,6 +37,28 @@
           "type": "description",
           "settings": {
           }
+        },
+        "10bb8d96-5b84-4076-8e76-7ef9838a4ea1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "4a09c59f-5bac-4bc1-9c5a-77cf31e61bf6": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "hello",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
         }
       },
       "block_order": [
@@ -45,7 +67,9 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "description"
+        "description",
+        "10bb8d96-5b84-4076-8e76-7ef9838a4ea1",
+        "4a09c59f-5bac-4bc1-9c5a-77cf31e61bf6"
       ],
       "custom_css": [
         "h1 {font-size: 25px;}"
