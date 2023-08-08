@@ -1,0 +1,20 @@
+{% assign navariantData = "" %}
+{
+{% for image in product.images %}
+  {% assign variantIds =  image.variants | map:'id' %}
+  {% if variantIds != blank %}
+  {% assign allvariantIds =  variantIds | join:',' | split:',' %}
+  {% assign neededImage = image | image_url: width: 720 %}
+  {%  endif %}
+  {% for id in allvariantIds %}
+      {% if navariantData contains id %}
+        {%  assign newimg  = image | image_url: width: 720 | split:'?' | slice:0 %}
+        {% assign neededImage = neededImage | concat: newimg | join:','| split:',' %}
+        "{{allvariantIds[forloop.index0]}}": "{{neededImage | uniq | join: ','}}"{% if forloop.parentloop.last %}{% unless forloop.last %},{% endunless %}{% else%},{% endif %}
+      {% else %}
+        "{{ allvariantIds[forloop.index0]}}":"{{ image | image_url: width: 720 | split:'?'| slice:0}}"{% if forloop.parentloop.last %}{% unless forloop.last %},{% endunless %}{% else%},{% endif %}
+        {% assign navariantData = navariantData | append: id %}
+      {% endif %}
+  {% endfor %}
+{% endfor %}
+}
