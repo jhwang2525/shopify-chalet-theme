@@ -159,7 +159,7 @@
       },
       "5281749993944428517": {
         "type": "shopify:\/\/apps\/variant-image-wizard-swatch\/blocks\/app-embed\/66205c03-f474-4e2c-b275-0a2806eeac16",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
