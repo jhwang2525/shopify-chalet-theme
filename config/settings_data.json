@@ -145,20 +145,20 @@
 
     ],
     "blocks": {
-      "5294968793578418440": {
-        "type": "shopify:\/\/apps\/king-product-options-variant\/blocks\/app-embed\/ce104259-52b1-4720-9ecf-76b34cae0401",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "4015264832934714879": {
         "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
         "settings": {
         }
       },
-      "5685516428098731158": {
-        "type": "shopify:\/\/apps\/evs-easy-variant-swatches\/blocks\/main\/27eda200-13ae-4de1-81a6-2146966859a5",
+      "5294968793578418440": {
+        "type": "shopify:\/\/apps\/king-product-options-variant\/blocks\/app-embed\/ce104259-52b1-4720-9ecf-76b34cae0401",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "4571859552318407796": {
+        "type": "shopify:\/\/apps\/glo-color-swatch-variant-image\/blocks\/app-embed-block\/4394f710-096c-4021-bbde-8ebb26057c11",
         "disabled": false,
         "settings": {
         }
