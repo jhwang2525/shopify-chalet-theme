@@ -98,21 +98,21 @@
                     {%- if item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
                         <span class="visually-hidden">
-                          {{ 'products.product.price.regular_price' | t }}
+                          <span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.regular_price' | t }}</span>
                         </span>
                         <s class="cart-item__old-price product-option">
-                          {{- item.original_price | money -}}
+                          <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_price'>{{- item.original_price | money -}}</span>
                         </s>
                         <span class="visually-hidden">
-                          {{ 'products.product.price.sale_price' | t }}
+                          <span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.sale_price' | t }}</span>
                         </span>
                         <strong class="cart-item__final-price product-option">
-                          {{ item.final_price | money }}
+                          <span data-ymq-item-key="{{ item.key }}" class='ymq_item_final_price'>{{ item.final_price | money }}</span>
                         </strong>
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        {{ item.original_price | money }}
+                        <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_price'>{{ item.original_price | money }}</span>
                       </div>
                     {%- endif -%}
 
@@ -199,29 +199,29 @@
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
-                            {{ 'products.product.price.regular_price' | t }}
+                            <span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.regular_price' | t }}</span>
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
-                            {{ 'products.product.price.sale_price' | t }}
+                            <span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.sale_price' | t }}</span>
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            <span data-ymq-item-key="{{ item.key }}" class='ymq_item_final_line_price'>{{ item.final_line_price | money }}</span>
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span>
                         </span>
                       {%- endif -%}
 
                       {%- if item.variant.available and item.unit_price_measurement -%}
                         <div class="unit-price caption">
-                          <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                          <span class="visually-hidden"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.unit_price' | t }}</span></span>
                           {{ item.variant.unit_price | money }}
                           <span aria-hidden="true">/</span>
                           <span class="visually-hidden"
@@ -322,29 +322,29 @@
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
-                            {{ 'products.product.price.regular_price' | t }}
+                            <span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.regular_price' | t }}</span>
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
-                            {{ 'products.product.price.sale_price' | t }}
+                            <span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.sale_price' | t }}</span>
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_line_price | money }}
+                            <span data-ymq-item-key="{{ item.key }}" class='ymq_item_final_line_price'>{{ item.final_line_price | money }}</span>
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span>
                         </span>
                       {%- endif -%}
 
                       {%- if item.variant.available and item.unit_price_measurement -%}
                         <div class="unit-price caption">
-                          <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                          <span class="visually-hidden"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ 'products.product.price.unit_price' | t }}</span></span>
                           {{ item.variant.unit_price | money }}
                           <span aria-hidden="true">/</span>
                           <span class="visually-hidden"
@@ -404,3 +404,4 @@
   ]
 }
 {% endschema %}
+{% comment %}<!-- ymq option done -->{% endcomment %}
