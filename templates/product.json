@@ -43,7 +43,7 @@
           "settings": {
             "heading": "Fabric",
             "icon": "check_mark",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.fabric | metafield_tag }}<\/p>",
             "page": ""
           }
         },
