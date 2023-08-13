@@ -32,7 +32,13 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    {{ content_for_header }}
+    <!-- starapps_scripts_start -->
+<!-- This code is automatically managed by StarApps Studio -->
+<!-- Please contact support@starapps.studio for any help -->
+{% render "starapps-product-json", product: product, starapps_app: "VIA", starapps_attribute: "sa-product-json" %}
+<script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/0b7e5e/script-1691968009.js?shop={{shop.permanent_domain}}" async></script>
+<!-- starapps_scripts_end -->
+{{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
