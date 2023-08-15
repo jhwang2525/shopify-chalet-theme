@@ -66,42 +66,11 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
-    },
-    "c75f610d-abd7-42af-a323-6fd0036ae762": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-heading-1",
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-text-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "16d77355-e540-4f43-9d88-c44c2bee5112",
     "8de98f62-8b6b-4612-bcdf-d75bf01dbe69",
-    "main",
-    "c75f610d-abd7-42af-a323-6fd0036ae762"
+    "main"
   ]
 }
