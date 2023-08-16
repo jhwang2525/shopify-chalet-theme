@@ -37,6 +37,24 @@
           "type": "description",
           "settings": {
           }
+        },
+        "10bb8d96-5b84-4076-8e76-7ef9838a4ea1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric",
+            "icon": "check_mark",
+            "content": "<p>{{ product.metafields.custom.fabric | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "b9903db8-68d8-4db9-becf-a7a8ba37c19b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Please Note",
+            "icon": "check_mark",
+            "content": "<h4><strong>Prices vary between XS-XL & 1X-3X<\/strong><\/h4><h4><strong>Styled with Kate Capri Pant C78012<\/strong><\/h4><h4><strong>The model is wearing a Small<\/strong><\/h4><h4>Height: 5'9\"<\/h4><h4>Waist: 25<\/h4><h4>Hips: 35a<\/h4><h4>Bust: 34<\/h4>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -45,7 +63,9 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "description"
+        "description",
+        "10bb8d96-5b84-4076-8e76-7ef9838a4ea1",
+        "b9903db8-68d8-4db9-becf-a7a8ba37c19b"
       ],
       "custom_css": [
         "h1 {font-size: 25px;}"
