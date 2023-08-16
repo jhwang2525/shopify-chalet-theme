@@ -113,7 +113,7 @@
         "template--20504907776277__16d1b002-9253-4a42-b933-03426aef28a9-text-1"
       ],
       "custom_css": [
-        "h5 {display: block; margin-top: 20rem; font-size: 30px;}"
+        "p {display: block; margin-top: 20rem; font-size: 30px; width: 300px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_0506.jpg",
