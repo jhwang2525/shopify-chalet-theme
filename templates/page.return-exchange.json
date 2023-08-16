@@ -132,6 +132,9 @@
     },
     "f51fa0cd-a624-4ff6-abfe-d5d4a8615529": {
       "type": "page",
+      "custom_css": [
+        "h2{display:none;}"
+      ],
       "settings": {
         "page": "return-exchange",
         "heading_size": "h1",
