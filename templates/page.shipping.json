@@ -132,6 +132,9 @@
     },
     "fa4b71cc-47b2-4ba0-87b8-5324a9d84659": {
       "type": "page",
+      "custom_css": [
+        "h2{display:none;}"
+      ],
       "settings": {
         "page": "shipping",
         "heading_size": "h1",
