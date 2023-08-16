@@ -2,7 +2,6 @@
   "sections": {
     "16d77355-e540-4f43-9d88-c44c2bee5112": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/icons4.png",
         "image_2": "shopify:\/\/shop_images\/icons3.png",
