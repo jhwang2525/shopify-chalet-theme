@@ -107,6 +107,38 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "8b94da69-23a5-42bb-8ef3-d324d8e711a7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20505063391509__8b94da69-23a5-42bb-8ef3-d324d8e711a7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Shipping Information<\/h2>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "template--20505063391509__8b94da69-23a5-42bb-8ef3-d324d8e711a7-text-1"
+      ],
+      "custom_css": [
+        "h2 {display: block; margin-top: 20rem; line-height: 0;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0264.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -114,6 +146,7 @@
     "8de98f62-8b6b-4612-bcdf-d75bf01dbe69",
     "main",
     "c75f610d-abd7-42af-a323-6fd0036ae762",
-    "fa4b71cc-47b2-4ba0-87b8-5324a9d84659"
+    "fa4b71cc-47b2-4ba0-87b8-5324a9d84659",
+    "8b94da69-23a5-42bb-8ef3-d324d8e711a7"
   ]
 }
