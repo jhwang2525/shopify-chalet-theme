@@ -112,6 +112,9 @@
       "block_order": [
         "template--20504907776277__16d1b002-9253-4a42-b933-03426aef28a9-text-1"
       ],
+      "custom_css": [
+        "h2 {display: block; margin-top: 20rem; line-height: 0;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_0506.jpg",
         "height": "adapt",
