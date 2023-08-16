@@ -68,8 +68,7 @@
         "b9903db8-68d8-4db9-becf-a7a8ba37c19b"
       ],
       "custom_css": [
-        "h1 {font-size: 25px;}",
-        ".accordion summary{display:none;}"
+        "h1 {font-size: 25px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
