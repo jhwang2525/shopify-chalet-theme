@@ -98,6 +98,35 @@
         "padding_bottom": 52
       }
     },
+    "16d1b002-9253-4a42-b933-03426aef28a9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20504907776277__16d1b002-9253-4a42-b933-03426aef28a9-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Returns & Exchange<\/h2>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--20504907776277__16d1b002-9253-4a42-b933-03426aef28a9-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0506.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "f51fa0cd-a624-4ff6-abfe-d5d4a8615529": {
       "type": "page",
       "settings": {
@@ -114,6 +143,7 @@
     "8de98f62-8b6b-4612-bcdf-d75bf01dbe69",
     "main",
     "c75f610d-abd7-42af-a323-6fd0036ae762",
+    "16d1b002-9253-4a42-b933-03426aef28a9",
     "f51fa0cd-a624-4ff6-abfe-d5d4a8615529"
   ]
 }
