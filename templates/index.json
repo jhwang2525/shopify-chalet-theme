@@ -6,7 +6,7 @@
         "519ea0c1-1427-45fe-a96c-00a8ef1854d6": {
           "type": "text",
           "settings": {
-            "text": "Our Spring pieces trend to add to your wardrobe",
+            "text": "Our Fall pieces trend to add to your wardrobe",
             "text_style": "subtitle"
           }
         },
@@ -30,7 +30,7 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-06-08_at_1.50.41_AM.png",
+        "image": "shopify:\/\/shop_images\/IMG_0422.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-left",
