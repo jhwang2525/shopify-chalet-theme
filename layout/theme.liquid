@@ -257,7 +257,19 @@
   {% include 'bss-store-locator-popup' %}
                 
                 {% include 'bss-store-locator-setting-header' %}
-                
+                  <style>
+  [id*='section'][id*='image']{
+      max-width: 40%;
+      width: 100% !important;
+      margin: 0 auto !important;
+  }
+  
+  @media (max-width: 749px){
+      [id*='section'][id*='image']{
+      max-width: 100%;
+  }
+  }
+  </style>
                 </head>
             
 
