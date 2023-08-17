@@ -2,6 +2,7 @@
   "sections": {
     "16d77355-e540-4f43-9d88-c44c2bee5112": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/icons4.png",
         "image_2": "shopify:\/\/shop_images\/icons3.png",
@@ -57,6 +58,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "h2 {font-size: 30px; line-height: 1px;}",
@@ -133,7 +135,8 @@
     "fa4b71cc-47b2-4ba0-87b8-5324a9d84659": {
       "type": "page",
       "custom_css": [
-        "h2{display:none;}"
+        "h2 {display: none;}",
+        "p{line-height: 24px;}"
       ],
       "settings": {
         "page": "shipping",
