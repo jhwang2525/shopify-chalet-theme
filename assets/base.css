@@ -985,6 +985,7 @@ summary::-webkit-details-marker {
 
   .title-wrapper-with-link .title {
     margin-bottom: 0;
+    font-size: 25px;
   }
 
   .title-wrapper--self-padded-tablet-down {
