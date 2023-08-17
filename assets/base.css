@@ -1008,6 +1008,7 @@ summary::-webkit-details-marker {
 .title-wrapper-with-link a {
   margin-top: 0;
   flex-shrink: 0;
+  font-size: 13px;
 }
 
 .title-wrapper--no-top-margin {
