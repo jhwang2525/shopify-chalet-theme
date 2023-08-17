@@ -318,18 +318,6 @@
     {%- endif -%}
     
   {% if content_for_header contains 'store-locator-api.bsscommerce.com' %}{% include 'bss-store-locator-js-liquid' %}{% endif %}{% if content_for_header contains 'https://store-locator-api.bsscommerce.com' %}{% include 'bss-store-locator-js-liquid' %}{% endif %}
-  <style>
-[id*='section'][id*='image']{
-    max-width: 80%;
-    width: 100% !important;
-    margin: 0 auto !important;
-}
-
-@media (max-width: 749px){
-    [id*='section'][id*='image']{
-    max-width: 100%;
-}
-}
-</style>
+  
   </body>
 </html>
