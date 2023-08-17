@@ -35,7 +35,8 @@
 
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
-    row-gap: 60px;
+    row-gap: 6rem;
+    column-gap:70px;
     margin-bottom: 0;
   }
 }
