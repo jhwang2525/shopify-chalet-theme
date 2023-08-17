@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-login",
+      "custom_css": [
+        "h1 {font-size: 25px;}"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
