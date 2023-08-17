@@ -1047,7 +1047,7 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 750px) {
   .grid {
-    column-gap: 10rem;
+    column-gap: 5px;
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 }
