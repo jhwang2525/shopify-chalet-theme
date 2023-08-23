@@ -1063,3 +1063,19 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+class ColorName extends HTMLElement {
+constructor() {
+super();
+this.color = this.parentNode.innerText;
+this.optionSelects = this.parentNode.parentNode;
+this.optionSelects.addEventListener('change', this.colorRender.bind(this))
+this.colorRender();
+}
+
+colorRender() {
+this.selectedColor = document.querySelector(`input[name="${this.color}"]:checked`).value;
+this.innerText = `: ${this.selectedColor.charAt(0).toUpperCase() + this.selectedColor.slice(1)}`;
+}
+}
+
+customElements.define('color-name', ColorName);
