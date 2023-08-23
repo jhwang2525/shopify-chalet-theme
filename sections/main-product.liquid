@@ -307,11 +307,11 @@
                 share_link: share_url
               %}
 
-            {%- when 'buy_buttons' -%}
+           {%- when 'buy_buttons' -%}
             {% assign option_name = "Color,Style,Colour" %}
 
 {% assign swatch_size = '3vw' %} {% comment %} Change the color swatch size below.{% endcomment %}
-{% assign swatch_shape = 'round' %} {% comment %} Change the swatch shape. Use either 'round', 'square', 'rectangle' or 'round-edge'. {% endcomment %}
+{% assign swatch_shape = 'round-edge' %} {% comment %} Change the swatch shape. Use either 'round', 'square', 'rectangle' or 'round-edge'. {% endcomment %}
 
 {%- unless product.has_only_default_variant -%}
 {% assign picker_type = block.settings.picker_type %}
@@ -345,7 +345,7 @@ style="
 {% when 'round' %} border-radius: 50%; aspect-ratio: 1;
 {% when 'square' %} aspect-ratio: 1;
 {% when 'rectangle' %} height: calc({{swatch_size}} / 2);
-{% when 'round-edge' %} border-radius: 25%; aspect-ratio: 1;
+{% when 'round-edge' %} border-radius: 15%; aspect-ratio: 1;
 {% endcase %}">
 <img src="{{- productVariantImage | img_url: 'small' | uniq -}}" alt="{{- productVariantImage.alt -}}">
 </label>
