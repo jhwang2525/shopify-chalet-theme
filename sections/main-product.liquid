@@ -307,7 +307,230 @@
                 share_link: share_url
               %}
 
-            {%- when 'variant_picker' -%}
+            {%- when 'buy_buttons' -%}
+            {% assign option_name = "Color,Style,Colour" %}
+
+{% assign swatch_size = '3vw' %} {% comment %} Change the color swatch size below.{% endcomment %}
+{% assign swatch_shape = 'round-edge' %} {% comment %} Change the swatch shape. Use either 'round', 'square', 'rectangle' or 'round-edge'. {% endcomment %}
+
+{%- unless product.has_only_default_variant -%}
+{% assign picker_type = block.settings.picker_type %}
+{%- if picker_type == 'button' -%}
+<variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+{%- for option in product.options_with_values -%}
+<fieldset {% if option_name contains option.name %} class="swatchComponent" style=" padding: 0;" {% else %} class="js product-form__input" style="border:none" {% endif %}>
+{% if option_name contains option.name %}
+<legend class="form__label">{{ option.name }}<color-name></color-name></legend>
+<div class="swatchContainer">
+{% assign productVariantImage = "" %}
+{%- for value in option.values -%}
+{%- for productOption in product.variants -%}
+{%- if productOption.options[0] == value -%}
+{% assign productVariantImage = productOption.featured_image %}
+{%- endif -%}
+{%- endfor -%}
+
+<input class="inputColor"
+name="{{ option.name }}"
+value="{{ value | escape }}"
+form="product-form-{{ section.id }}"
+type="radio"
+id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+{% if option.selected_value == value %}checked{% endif %}>
+<label class="labelColor"
+for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+data-color="{{value | downcase | replace: ' ', '-' }}"
+style="
+{% case swatch_shape %}
+{% when 'round' %} border-radius: 50%; aspect-ratio: 1;
+{% when 'square' %} aspect-ratio: 1;
+{% when 'rectangle' %} height: calc({{swatch_size}} / 2);
+{% when 'round-edge' %} border-radius: 15%; aspect-ratio: 1;
+{% endcase %}">
+<img src="{{- productVariantImage | img_url: 'small' | uniq -}}" alt="{{- productVariantImage.alt -}}">
+</label>
+{% endfor %}
+</div>
+{% else %}
+<legend class="form__label">{{ option.name }}<color-name></color-name></legend>
+{%- for value in option.values -%}
+<input type="radio" id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+name="{{ option.name }}"
+value="{{ value | escape }}"
+form="product-form-{{ section.id }}"
+{% if option.selected_value == value %}checked{% endif %}>
+<label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
+{{ value }}
+</label>
+{%- endfor -%}
+{% endif %}
+</fieldset>
+{% endfor -%}
+<script type="application/json">
+{{ product.variants | json }}
+</script>
+</variant-radios>
+{%- else -%}
+
+<variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+{%- for option in product.options_with_values -%}
+{% if option_name contains option.name %}
+<variant-color>
+<fieldset class="swatchComponent" style=" padding: 0;">
+
+<legend class="form__label">{{ option.name }}<color-name></color-name></legend>
+<div class="swatchContainer">
+{% assign productVariantImage = "" %}
+{%- for value in option.values -%}
+{%- for productOption in product.variants -%}
+{%- if productOption.options[0] == value -%}
+{% assign productVariantImage = productOption.featured_image %}
+{%- endif -%}
+{%- endfor -%}
+<input class="inputColor"
+name="{{ option.name }}"
+value="{{ value | escape }}"
+form="product-form-{{ section.id }}"
+type="radio"
+id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+{% if option.selected_value == value %}checked{% endif %}>
+<label class="labelColor"
+for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
+style="
+{% case swatch_shape %}
+{% when 'round' %} border-radius: 50%; aspect-ratio: 1;
+{% when 'square' %} aspect-ratio: 1;
+{% when 'rectangle' %} height: calc({{swatch_size}} / 2);
+{% when 'round-edge' %} border-radius: 15%; aspect-ratio: 1;
+{% endcase %}">
+<img src="{{- productVariantImage | img_url: 'small' | uniq -}}" alt="{{- productVariantImage.alt -}}">
+</label>
+{% endfor %}
+</div>
+
+</fieldset>
+</variant-color>
+{% endif %}
+
+<div class="product-form__input product-form__input--dropdown" {% if option_name contains option.name %}style="display: none"{% endif %}>
+<label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+{{ option.name }}
+</label>
+<div class="select">
+<select id="Option-{{ section.id }}-{{ forloop.index0 }}"
+class="select__select {% if option_name contains option.name %} colorSelect{% endif %}"
+name="options[{{ option.name | escape }}]"
+form="{{ product_form_id }}">
+{%- for value in option.values -%}
+<option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+{{ value }}
+</option>
+{%- endfor -%}
+</select>
+{% render 'icon-caret' %}
+</div>
+</div>
+{%- endfor -%}
+<script type="application/json">
+{{ product.variants | json }}
+</script>
+</variant-selects>
+{%- endif -%}
+{%- endunless -%}
+<noscript class="product-form__noscript-wrapper-{{ section.id }}">
+<div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+<label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
+<div class="select">
+<select name="id" id="Variants-{{ section.id }}" class="select__select" form="{{ product_form_id }}">
+{%- for variant in product.variants -%}
+<option
+{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+{% if variant.available == false %}disabled{% endif %}
+value="{{ variant.id }}">
+{{ variant.title }}
+{%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+- {{ variant.price | money | strip_html }}
+</option>
+{%- endfor -%}
+</select>
+{% render 'icon-caret' %}
+</div>
+</div>
+</noscript>
+<script>
+class VariantColor extends HTMLElement {
+constructor() {
+super();
+this.inputColors = this.querySelectorAll('.inputColor');
+this.inputColors.forEach(color => color.addEventListener('click', this.colorSelected.bind(this)));
+}
+
+colorSelected(event) {
+const select = document.querySelector(`.colorSelect`);
+const item = event.currentTarget.value;
+select.value = item ;
+}
+}
+
+customElements.define('variant-color', VariantColor);
+</script>
+<style>
+fieldset{
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+-khtml-user-select: none; /* Konqueror HTML */
+-moz-user-select: none; /* Old versions of Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none;
+}
+
+.swatchComponent {
+display: flex;
+margin: 5% 0;
+box-sizing: border-box;
+position: relative;
+border: none;
+}
+
+.swatchContainer {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.inputColor {
+display: none;
+}
+
+.labelColor {
+width: {{swatch_size}};
+margin: 1%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+overflow: hidden;
+transition: all .3s ease;
+}
+
+.labelColor:hover{
+transform: scale(1.1);
+}
+
+.labelColor img {
+object-fit: cover;
+width: 100%;
+}
+
+.inputColor:checked + .labelColor + .infoColor {
+display: flex;
+}
+
+.inputColor:checked + .labelColor {
+outline: 2px solid;
+border: 2px solid white;
+}
+</style>
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
