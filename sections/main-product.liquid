@@ -398,9 +398,9 @@ id="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
 for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}"
 style="
 {% case swatch_shape %}
-{% when 'round' %} border-radius: 50%; aspect-ratio: 1;
+{% when 'round' %} border-radius: 50%; aspect-ratio: {{swatch_size}} / 2;
 {% when 'square' %} aspect-ratio: 1;
-{% when 'rectangle' %} height: calc({{swatch_size}} / 2);
+{% when 'rectangle' %} height: calc( / 2);
 {% when 'round-edge' %} border-radius: 15%; aspect-ratio: 1;
 {% endcase %}">
 <img src="{{- productVariantImage | img_url: 'small' | uniq -}}" alt="{{- productVariantImage.alt -}}">
