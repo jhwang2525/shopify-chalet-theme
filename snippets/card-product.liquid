@@ -152,6 +152,99 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+   {% comment %} ============================================================================================================= {% endcomment %}
+{% assign colorName = "Color" %} {% comment %} Provide the name of the Color. Make sure you enclose it with quotation marks {% endcomment %}
+{% assign swatchSize = '4rem' %} {% comment %} You can use rem, px, %, etc. Make sure you enclose it with quotation marks {% endcomment %}
+{% comment %} ============================================================================================================= {% endcomment %}
+{%- for option in card_product.options_with_values -%}
+{% if option.name == colorName %}
+<fieldset class="js product-form__input">
+<legend>{{ option.name }}</legend>
+{%- for value in option.values limit: 5 -%}
+<input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+name="{{ option.name }}"
+value="{{ value | escape }}"
+form="{{ product_form_id }}"
+{% if option.selected_value == value %}checked{% endif %}>
+<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+class="{% if option.name == colorName %}colorLabel{% endif %}">
+{% if option.name == colorName %}
+{%- for productOption in card_product.variants -%}
+{%- if productOption.options[0] == value and productOption.featured_image != blank -%}
+
+<img src="{{- productOption.featured_image | img_url: 'small' | uniq -}}" alt="{{- productOption.featured_image.alt -}}">
+{%- endif -%}
+{%- endfor -%}
+{% endif %}
+</label>
+{%- endfor -%}
+
+{% if option.values.size > 5 %}<strong class="plusMore"> + More </strong>{% endif %}
+
+</fieldset>
+{% endif %}
+
+{% endfor %}
+<script type="application/json">
+{{ card_product.variants | json }}
+</script>
+<style scoped>
+fieldset {
+border: none;
+padding: 0;
+}
+
+
+.colorLabel {
+padding: 0 !important;
+height: calc({{swatchSize}} + var(--variant-pills-border-width));
+aspect-ratio: 1;
+border: var(--variant-pills-border-width) solid transparent !important;
+border-radius: 50%;
+overflow: hidden;
+display: inline-block;
+margin: 0.7rem 0.5rem 0.2rem 0;
+transition: border var(--duration-short) ease;
+cursor: pointer;
+position: relative;
+}
+
+.colorLabel:before {
+content: "";
+position: absolute;
+top: calc(var(--variant-pills-border-width) * -1);
+right: calc(var(--variant-pills-border-width) * -1);
+bottom: calc(var(--variant-pills-border-width) * -1);
+left: calc(var(--variant-pills-border-width) * -1);
+z-index: -1;
+border-radius: var(--variant-pills-radius);
+box-shadow: var(--variant-pills-shadow-horizontal-offset) var(--variant-pills-shadow-vertical-offset) var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow),var(--variant-pills-shadow-opacity));
+}
+
+.product-form__input input[type=radio] {
+clip: rect(0,0,0,0);
+overflow: hidden;
+position: absolute;
+height: 1px;
+width: 1px;
+}
+
+fieldset label > img {
+width: {{swatchSize}};
+height: {{swatchSize}};
+aspect-ratio: 1;
+}
+
+fieldset label > img:not(:first-child) {
+display: none !important;
+}
+
+.plusMore {
+display: inline-block;
+top: -13px;
+position: relative;
+}
+</style>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
