@@ -452,10 +452,4 @@
     color: currentColor;
   }
 }
-@media screen and (min-width: 990px) {
-    .image-banner-section {
-        max-width: var(--page-width);
-        margin: 0 auto;
-        padding: 0 5rem;
-    }
-}
+
