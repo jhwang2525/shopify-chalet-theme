@@ -2,8 +2,11 @@
   "sections": {
     "16d77355-e540-4f43-9d88-c44c2bee5112": {
       "type": "image-banner",
+      "custom_css": [
+
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled_1800_x_1000_px_1800_x_1100_px.png",
+        "image": "shopify:\/\/shop_images\/Add_a_subheading.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
