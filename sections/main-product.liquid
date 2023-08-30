@@ -589,9 +589,8 @@ border: 2px solid white;
                       </div>
                       {%- if block.settings.make_collapsible_row -%}
                           {% render 'icon-caret' %}
-                     
+                      
                       {%- endif -%}
-                  
                       <slideshow-component class="slider-mobile-gutter">
                         {%- assign number_of_slides = recommendations.products_count | plus: 0.0 | divided_by: block.settings.products_per_page | ceil -%}
                         <div id="Slider-{{ block.id }}" class="contains-card contains-card--product complementary-slider grid grid--1-col slider slider--everywhere" role="list"{% if number_of_slides > 1 %} aria-label="{{ 'general.slider.name' | t }}"{% endif %}>
