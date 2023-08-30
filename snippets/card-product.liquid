@@ -154,7 +154,7 @@
           </h3>
    {% comment %} ============================================================================================================= {% endcomment %}
 {% assign colorName = "Color" %} {% comment %} Provide the name of the Color. Make sure you enclose it with quotation marks {% endcomment %}
-{% assign swatchSize = '5.5rem' %} {% comment %} You can use rem, px, %, etc. Make sure you enclose it with quotation marks {% endcomment %}
+{% assign swatchSize = '6rem' %} {% comment %} You can use rem, px, %, etc. Make sure you enclose it with quotation marks {% endcomment %}
 {% comment %} ============================================================================================================= {% endcomment %}
 {%- for option in card_product.options_with_values -%}
 {% if option.name == colorName %}
@@ -199,10 +199,11 @@ padding: 0;
 padding: 0 !important;
 height: calc({{swatchSize}} + var(--variant-pills-border-width));
 aspect-ratio: 1;
-border: var(--variant-pills-border-width) solid #f5f5f5 !important;
+border: var(--variant-pills-border-width) solid transparent !important;
 border-radius: 50%;
 overflow: hidden;
 display: inline-block;
+margin: 0.7rem 0.5rem 0.2rem 0;
 transition: border var(--duration-short) ease;
 cursor: pointer;
 position: relative;
@@ -229,9 +230,9 @@ width: 1px;
 }
 
 fieldset label > img {
-  width:20px;
-  height:20px;
-object-fit:cover;
+width: {{swatchSize}};
+height: {{swatchSize}};
+aspect-ratio: 1;
 }
 
 fieldset label > img:not(:first-child) {
