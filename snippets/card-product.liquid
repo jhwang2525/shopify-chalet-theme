@@ -159,7 +159,6 @@
 {%- for option in card_product.options_with_values -%}
 {% if option.name == colorName %}
 <fieldset class="js product-form__input">
-<legend>{{ option.name }}</legend>
 {%- for value in option.values limit: 5 -%}
 <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
 name="{{ option.name }}"
@@ -243,7 +242,6 @@ display: none !important;
 display: inline-block;
 top: -13px;
 position: relative;
-display:none;
 }
 </style>
           <div class="card-information">
