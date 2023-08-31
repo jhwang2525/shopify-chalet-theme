@@ -75,7 +75,7 @@
         "enable_sticky_info": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
