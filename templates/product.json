@@ -24,7 +24,7 @@
           "type": "popup",
           "settings": {
             "text": "Size Chart",
-            "page": ""
+            "page": "size-guide"
           }
         },
         "variant_picker": {
