@@ -20,6 +20,13 @@
           "settings": {
           }
         },
+        "b622c47f-9854-4706-ad7e-ca446f973186": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Guide",
+            "page": ""
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -61,6 +68,7 @@
         "vendor",
         "title",
         "price",
+        "b622c47f-9854-4706-ad7e-ca446f973186",
         "variant_picker",
         "buy_buttons",
         "description",
