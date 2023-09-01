@@ -20,13 +20,6 @@
           "settings": {
           }
         },
-        "b622c47f-9854-4706-ad7e-ca446f973186": {
-          "type": "popup",
-          "settings": {
-            "text": "Size Chart",
-            "page": "size-guide"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -38,6 +31,13 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
+          }
+        },
+        "b622c47f-9854-4706-ad7e-ca446f973186": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Chart",
+            "page": "size-guide"
           }
         },
         "description": {
@@ -68,17 +68,16 @@
         "vendor",
         "title",
         "price",
-        "b622c47f-9854-4706-ad7e-ca446f973186",
         "variant_picker",
         "buy_buttons",
+        "b622c47f-9854-4706-ad7e-ca446f973186",
         "description",
         "10bb8d96-5b84-4076-8e76-7ef9838a4ea1",
         "b9903db8-68d8-4db9-becf-a7a8ba37c19b"
       ],
       "custom_css": [
         "h1 {font-size: 25px;}",
-        "#variant-selects-template--19327717048597__main {display: none;}",
-        ".swatchComponent{margin:none;}"
+        "#variant-selects-template--19327717048597__main {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
