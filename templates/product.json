@@ -78,7 +78,7 @@
       "custom_css": [
         "h1 {font-size: 25px;}",
         "#variant-selects-template--19327717048597__main {display: none;}",
-        " .labelColor {width: 10.5vw; }"
+        "@media only screen and (max-width: 500px) {.labelColor {width: 10.5vw;}}"
       ],
       "settings": {
         "enable_sticky_info": true,
