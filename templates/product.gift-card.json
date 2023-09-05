@@ -58,7 +58,8 @@
       ],
       "custom_css": [
         "h1 {font-size: 25px;}",
-        "#variant-selects-template--19327717048597__main {display: none;}"
+        "#variant-selects-template--19327717048597__main {display: none;}",
+        "#variant-selects-template--20816391897365__main {display: none;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -69,7 +70,7 @@
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
-        "hide_variants": true,
+        "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 48
