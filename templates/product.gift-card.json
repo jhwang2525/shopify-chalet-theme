@@ -60,8 +60,7 @@
         "h1 {font-size: 25px;}",
         "#variant-selects-template--19327717048597__main {display: none;}",
         "#variant-selects-template--20816391897365__main {display: none;}",
-        "@media screen and (min-width: 800px) {.product__info-wrapper {padding: 20rem 0 0 15rem; }}",
-        ".form__label{display:none;}"
+        "@media screen and (min-width: 800px) {.product__info-wrapper {padding: 20rem 0 0 15rem; }}"
       ],
       "settings": {
         "enable_sticky_info": true,
