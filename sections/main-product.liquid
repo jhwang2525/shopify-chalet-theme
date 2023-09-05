@@ -180,7 +180,7 @@
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                <details id="Details-{{ block.id }}-{{ section.id }}"{% if block.settings.open %} open {% endif %}>
+                <details id="Details-{{ block.id }}-{{ section.id }}">
                   <summary>
                     <div class="summary__title">
                       {% render 'icon-accordion', icon: block.settings.icon %}
@@ -1006,11 +1006,6 @@ border: 2px solid white;
       "type": "collapsible_tab",
       "name": "t:sections.main-product.blocks.collapsible_tab.name",
       "settings": [
-        {
-          "type": "checkbox",
-          "id": "open",
-          "label": "Open by default"
-        },
         {
           "type": "text",
           "id": "heading",
