@@ -428,6 +428,7 @@
       "title": "Create account",
       "first_name": "First name",
       "last_name": "Last name",
+      "birth_day": "Birthday",
       "email": "Email",
       "password": "Password",
       "submit": "Create"
