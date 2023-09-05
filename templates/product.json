@@ -77,7 +77,8 @@
       ],
       "custom_css": [
         "h1 {font-size: 25px;}",
-        "#variant-selects-template--19327717048597__main {display: none;}"
+        "#variant-selects-template--19327717048597__main {display: none;}",
+        " @media screen and (min-width: 749px) {.labelColor {width: 10.5vw; }}"
       ],
       "settings": {
         "enable_sticky_info": true,
