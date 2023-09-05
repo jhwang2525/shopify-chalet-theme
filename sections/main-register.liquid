@@ -79,6 +79,21 @@
         {{ 'customer.register.last_name' | t }}
       </label>
     </div>
+      <div class="field">
+      <input
+        type="text"
+        name="customer[birth_day]"
+        id="RegisterForm-BirthDay"
+        {% if form.birth_day %}
+          value="{{ form.birth_day }}"
+        {% endif %}
+        autocomplete="family-name"
+        placeholder="{{ 'customer.register.last_name' | t }}"
+      >
+      <label for="RegisterForm-LastName">
+        {{ 'customer.register.last_name' | t }}
+      </label>
+    </div>
     <div class="field">
       <input
         type="email"
