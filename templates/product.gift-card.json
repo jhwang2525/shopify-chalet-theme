@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "b622c47f-9854-4706-ad7e-ca446f973186": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Chart",
+            "page": "size-guide"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "10bb8d96-5b84-4076-8e76-7ef9838a4ea1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric",
+            "icon": "check_mark",
+            "content": "<p>{{ product.metafields.custom.fabric | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "b9903db8-68d8-4db9-becf-a7a8ba37c19b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Please Note",
+            "icon": "check_mark",
+            "content": "<h4>Prices vary between XS-XL & 1X-3X<\/h4><h4>The model is wearing a Small<\/h4><h4>Height: 5'9\"<\/h4><h4>Waist: 25<\/h4><h4>Hips: 35a<\/h4><h4>Bust: 34<\/h4>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "b622c47f-9854-4706-ad7e-ca446f973186",
+        "description",
+        "10bb8d96-5b84-4076-8e76-7ef9838a4ea1",
+        "b9903db8-68d8-4db9-becf-a7a8ba37c19b"
+      ],
+      "custom_css": [
+        "h1 {font-size: 25px;}",
+        "#variant-selects-template--19327717048597__main {display: none;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        ".h2 {font-size: 18px;}"
+      ],
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 92,
+        "padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}
