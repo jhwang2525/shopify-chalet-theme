@@ -60,7 +60,7 @@
         "h1 {font-size: 25px;}",
         "#variant-selects-template--19327717048597__main {display: none;}",
         "#variant-selects-template--20816391897365__main {display: none;}",
-        "@media screen and (min-width: 800px) {.product__info-wrapper {padding: 5rem 0 0 15rem; }}",
+        "@media screen and (min-width: 800px) {.product__info-wrapper {padding: 12rem 0 0 20rem; }}",
         "#price-template--20816391897365__main {display: none;}"
       ],
       "settings": {
