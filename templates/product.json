@@ -15,6 +15,13 @@
           "settings": {
           }
         },
+        "b622c47f-9854-4706-ad7e-ca446f973186": {
+          "type": "popup",
+          "settings": {
+            "text": "Size Chart",
+            "page": "size-guide"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -24,13 +31,6 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "b622c47f-9854-4706-ad7e-ca446f973186": {
-          "type": "popup",
-          "settings": {
-            "text": "Size Chart",
-            "page": "size-guide"
           }
         },
         "buy_buttons": {
@@ -67,9 +67,9 @@
       "block_order": [
         "vendor",
         "title",
+        "b622c47f-9854-4706-ad7e-ca446f973186",
         "price",
         "variant_picker",
-        "b622c47f-9854-4706-ad7e-ca446f973186",
         "buy_buttons",
         "description",
         "10bb8d96-5b84-4076-8e76-7ef9838a4ea1",
