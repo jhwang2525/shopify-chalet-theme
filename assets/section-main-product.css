@@ -957,10 +957,6 @@ a.product__text {
   }
 }
 
-.product-popup-modal__opener {
-  display: inline-block;
-}
-
 .product-popup-modal__button {
   font-size: 1.6rem;
   padding-right: 1.3rem;
