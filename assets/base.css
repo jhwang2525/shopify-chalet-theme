@@ -3196,7 +3196,12 @@ max-width: 100%;
     align-items: center;
 }
 }
-@media screen and (max-width: 749px) {
-.banner__media { height: auto !important; }
-.banner__media img { object-fit: contain !important; position: relative !important; }
+@media screen and (max-width: 749px){
+	.banner__media,
+	.banner__media img {
+		position: relative !important;
+	}
+	.banner__content {
+		display: none !important;
+	}
 }
