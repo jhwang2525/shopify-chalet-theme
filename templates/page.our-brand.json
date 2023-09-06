@@ -139,6 +139,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
         "h1 {display: none;}",
         "h2 {font-size: 30px; line-height: 1px;}",
