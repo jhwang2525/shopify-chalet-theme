@@ -91,7 +91,7 @@
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
-        "hide_variants": false,
+        "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 48
