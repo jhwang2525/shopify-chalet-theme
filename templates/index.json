@@ -76,7 +76,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".button {background-color: white; color: black;}"
+        ".button {background-color: white; color: black;}",
+        "h2 {padding-right: 25px;}"
       ],
       "settings": {
         "title": "New Arrivals",
