@@ -48,6 +48,7 @@
         "10bb8d96-5b84-4076-8e76-7ef9838a4ea1": {
           "type": "collapsible_tab",
           "settings": {
+            "open": true,
             "heading": "Fabric",
             "icon": "check_mark",
             "content": "<p>{{ product.metafields.custom.fabric | metafield_tag }}<\/p>",
@@ -57,6 +58,7 @@
         "b9903db8-68d8-4db9-becf-a7a8ba37c19b": {
           "type": "collapsible_tab",
           "settings": {
+            "open": false,
             "heading": "Please Note",
             "icon": "check_mark",
             "content": "<h4>Prices vary between XS-XL & 1X-3X<\/h4><h4>The model is wearing a Small<\/h4><h4>Height: 5'9\"<\/h4><h4>Waist: 25<\/h4><h4>Hips: 35a<\/h4><h4>Bust: 34<\/h4>",
