@@ -58,7 +58,7 @@
         "b9903db8-68d8-4db9-becf-a7a8ba37c19b": {
           "type": "collapsible_tab",
           "settings": {
-            "open": false,
+            "open": true,
             "heading": "Please Note",
             "icon": "check_mark",
             "content": "<h4>Prices vary between XS-XL & 1X-3X<\/h4><h4>The model is wearing a Small<\/h4><h4>Height: 5'9\"<\/h4><h4>Waist: 25<\/h4><h4>Hips: 35a<\/h4><h4>Bust: 34<\/h4>",
@@ -116,10 +116,72 @@
         "padding_top": 92,
         "padding_bottom": 24
       }
+    },
+    "8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-1",
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-2",
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-3",
+        "template--19327717048597__8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab-collapsible_row-4"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "8a3efd79-cf72-4ed2-a5d5-4b918b3db3ab"
   ]
 }
