@@ -3185,7 +3185,6 @@ max-width: 100%;
 
 }
 .footer-block.grid__item.footer-block--menu {
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: max-content;
