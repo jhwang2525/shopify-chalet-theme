@@ -3197,8 +3197,6 @@ max-width: 100%;
 }
 }
 @media screen and (max-width: 749px) {
-  .banner .banner__content:before {
-    padding-bottom: 100%!important;
-  }
-e.;
-  
+.banner__media { height: auto !important; }
+.banner__media img { object-fit: contain !important; position: relative !important; }
+}
