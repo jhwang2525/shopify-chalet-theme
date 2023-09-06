@@ -88,7 +88,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Untitled_1800_x_1000_px_1800_x_1100_px_1800_x_600_px_1300_x_600_px_1250_x_600_px_2500_x_800_px_1_fd9c86ac-23c1-4e8b-91e5-f3a223f411d2.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
