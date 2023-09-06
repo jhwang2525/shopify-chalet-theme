@@ -3199,3 +3199,8 @@ div#Banner-template--20505005195541__16d77355-e540-4f43-9d88-c44c2bee5112{
    padding-top: 400px !important;
     padding-bottom: 400px !important;
 }
+@media screen and (max-width: 749px) {
+  .banner .banner__content:before {
+    padding-bottom: 100%!important;
+  }
+}
