@@ -156,7 +156,47 @@
     },
     "5cb3d12a-70ec-49e0-a5af-7b8d9ee38321": {
       "type": "Collection-slider",
+      "blocks": {
+        "872f8f02-1be8-4419-8173-14c04893d009": {
+          "type": "collection",
+          "settings": {
+            "collection": "fw23-chalet"
+          }
+        },
+        "49f11da9-e19f-444a-a0d6-8fb3daa89e54": {
+          "type": "collection",
+          "settings": {
+            "collection": "fw23-beau-jours"
+          }
+        },
+        "04e947ce-1c39-4e2a-b1f1-c59803c96250": {
+          "type": "collection",
+          "settings": {
+            "collection": "ss23-chalet"
+          }
+        },
+        "85747cf7-078f-4b9e-a7d0-284747c8fc52": {
+          "type": "collection",
+          "settings": {
+            "collection": "ss23-beau-jours"
+          }
+        }
+      },
+      "block_order": [
+        "872f8f02-1be8-4419-8173-14c04893d009",
+        "49f11da9-e19f-444a-a0d6-8fb3daa89e54",
+        "04e947ce-1c39-4e2a-b1f1-c59803c96250",
+        "85747cf7-078f-4b9e-a7d0-284747c8fc52"
+      ],
       "settings": {
+        "bg": "",
+        "title": "Featured Collection Slider",
+        "image_ratio": "adapt",
+        "cell_align": "center",
+        "title_mb": 48,
+        "cell_width": "25%",
+        "wrap_around": "true",
+        "mr": 16
       }
     }
   },
