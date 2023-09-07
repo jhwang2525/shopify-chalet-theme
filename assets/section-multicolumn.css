@@ -53,7 +53,7 @@
 }
 
 .multicolumn-list__item:only-child {
-  max-width: 1000px;
+  max-width: 72rem;
 }
 
 .multicolumn-list__item--empty {
