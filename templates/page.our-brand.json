@@ -103,19 +103,13 @@
         "68150565-8d3d-47c6-a4f7-b4eba99ddfb5": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "ss22-chalet"
           }
         },
         "00915339-6326-44f8-aa30-985708861d34": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "fe7a8672-3121-44d6-a43c-25a42a3508e4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "ss22-beau-jours"
           }
         }
       },
@@ -127,8 +121,7 @@
         "1ca89e7a-5194-4522-b230-df4745090427",
         "8797b077-599e-4a96-98e1-c59738d8a438",
         "68150565-8d3d-47c6-a4f7-b4eba99ddfb5",
-        "00915339-6326-44f8-aa30-985708861d34",
-        "fe7a8672-3121-44d6-a43c-25a42a3508e4"
+        "00915339-6326-44f8-aa30-985708861d34"
       ],
       "settings": {
         "title": "",
