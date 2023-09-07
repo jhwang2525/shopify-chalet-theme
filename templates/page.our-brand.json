@@ -102,12 +102,52 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
         "button_link": "",
         "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2c512710-d7c7-4794-a182-710ce07f132e": {
+      "type": "collection-list",
+      "blocks": {
+        "template--20505005195541__2c512710-d7c7-4794-a182-710ce07f132e-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ss24-chalet"
+          }
+        },
+        "template--20505005195541__2c512710-d7c7-4794-a182-710ce07f132e-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--20505005195541__2c512710-d7c7-4794-a182-710ce07f132e-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20505005195541__2c512710-d7c7-4794-a182-710ce07f132e-featured_collection-1",
+        "template--20505005195541__2c512710-d7c7-4794-a182-710ce07f132e-featured_collection-2",
+        "template--20505005195541__2c512710-d7c7-4794-a182-710ce07f132e-featured_collection-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -120,6 +160,7 @@
     "f7a26089-20f4-44b4-b4d6-34480aac3d88",
     "587968fe-d749-4d68-9f6d-b5c5594234dd",
     "main",
-    "638aca2e-c90e-472d-85d1-2e142a58833c"
+    "638aca2e-c90e-472d-85d1-2e142a58833c",
+    "2c512710-d7c7-4794-a182-710ce07f132e"
   ]
 }
