@@ -2,20 +2,8 @@
   "sections": {
     "ecb8cf20-1483-47b5-820c-5bc0dd6b9bc3": {
       "type": "image-banner",
-      "blocks": {
-        "4bacf404-37d4-487a-afc3-8e8ac02a98c2": {
-          "type": "text",
-          "settings": {
-            "text": "NEW ARRIVALS",
-            "text_style": "subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "4bacf404-37d4-487a-afc3-8e8ac02a98c2"
-      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1673.jpg",
+        "image": "shopify:\/\/shop_images\/new_arrivals_fw23_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
