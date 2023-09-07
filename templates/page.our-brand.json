@@ -153,6 +153,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "5cb3d12a-70ec-49e0-a5af-7b8d9ee38321": {
+      "type": "Collection-slider",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -161,6 +166,7 @@
     "587968fe-d749-4d68-9f6d-b5c5594234dd",
     "main",
     "638aca2e-c90e-472d-85d1-2e142a58833c",
-    "2c512710-d7c7-4794-a182-710ce07f132e"
+    "2c512710-d7c7-4794-a182-710ce07f132e",
+    "5cb3d12a-70ec-49e0-a5af-7b8d9ee38321"
   ]
 }
