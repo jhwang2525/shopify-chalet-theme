@@ -193,10 +193,10 @@
         "title": "Featured Collection Slider",
         "image_ratio": "adapt",
         "cell_align": "center",
-        "title_mb": 48,
-        "cell_width": "25%",
+        "title_mb": 47,
+        "cell_width": "16.6666667%",
         "wrap_around": "true",
-        "mr": 16
+        "mr": 20
       }
     }
   },
