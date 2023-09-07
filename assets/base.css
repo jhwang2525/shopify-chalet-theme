@@ -1053,7 +1053,10 @@ summary::-webkit-details-marker {
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 }
-
+@media screen and (min-width: 1024px){
+.collection-list.grid {
+justify-content: center
+}
 .grid:last-child {
   margin-bottom: 0;
 }
@@ -1148,7 +1151,10 @@ summary::-webkit-details-marker {
     width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
     max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
   }
-
+.collection-list.grid--5-col-desktop .grid__item{
+width:calc(10% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+max-width: calc(10% - var(--grid-desktop-horizontal-spacing) * 4 / 5)
+}
   .grid--4-col-desktop .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
     max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
