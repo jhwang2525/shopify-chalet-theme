@@ -1117,7 +1117,7 @@ summary::-webkit-details-marker {
   }
 
   .grid--2-col-tablet .grid__item {
-  width: calc(20% - var(--grid-desktop-horizontal-spacing) / 2);
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
@@ -3204,4 +3204,13 @@ max-width: 100%;
 	.banner__content {
 		display: none !important;
 	}
+}
+@media (min-width: 767px){
+[id] .site-nav__dropdown {
+    position: fixed;
+    top: 185px!important;
+    width: 100%;
+    overflow: scroll !important;
+    height: 80% !important;
+}
 }
