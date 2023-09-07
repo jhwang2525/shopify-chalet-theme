@@ -48,44 +48,6 @@
         "show_text_below": true
       }
     },
-    "8de98f62-8b6b-4612-bcdf-d75bf01dbe69": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Welcome to Chalet Et Ceci",
-            "heading_size": "h2"
-          }
-        },
-        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop Chalet et Ceci believes in creating stylish, flattering fit and comfortable clothing without sacrificing our high quality and unique style.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-heading-1",
-        "template--19327716851989__8de98f62-8b6b-4612-bcdf-d75bf01dbe69-text-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2023-07-25_at_1.02.52_AM.png",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "color_scheme": "background-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 24,
-        "padding_bottom": 32
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -98,73 +60,12 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
-    },
-    "c75f610d-abd7-42af-a323-6fd0036ae762": {
-      "type": "rich-text",
-      "blocks": {
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-heading-1",
-        "template--19327716851989__c75f610d-abd7-42af-a323-6fd0036ae762-text-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "b72ef93f-3f3e-48b9-ab10-5a6bcb68d8a2": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "ss24-chalet",
-        "products_to_show": 20,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "fc461797-4c08-4071-8a6e-22c7279231e4",
     "f7a26089-20f4-44b4-b4d6-34480aac3d88",
     "587968fe-d749-4d68-9f6d-b5c5594234dd",
-    "8de98f62-8b6b-4612-bcdf-d75bf01dbe69",
-    "main",
-    "c75f610d-abd7-42af-a323-6fd0036ae762",
-    "b72ef93f-3f3e-48b9-ab10-5a6bcb68d8a2"
+    "main"
   ]
 }
