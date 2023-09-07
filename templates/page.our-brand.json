@@ -156,6 +156,78 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "85047631-d482-416f-a7cd-79cf40996455": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<link rel='stylesheet' href='https:\/\/unpkg.com\/locomotive-scroll@4.0.6\/dist\/locomotive-scroll.min.css' \/>\n<script src='https:\/\/unpkg.com\/locomotive-scroll@4.0.6\/dist\/locomotive-scroll.min.js'><\/script>\n\n<div class='scroll-animations-example' data-scroll-container>\n    <div class='scrollsection' data-scroll-section>\n        <div class='item -normal' data-scroll data-scroll-speed=\"2\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1005\/300\/400'>\n        <\/div>\n        <div class='item -big' data-scroll data-scroll-speed=\"1\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1019\/600\/800'>\n        <\/div>\n        <div class='item -small -horizontal' data-scroll data-scroll-speed=\"4\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1027\/400\/300'>\n        <\/div>\n        <div class='item -normal' data-scroll data-scroll-speed=\"3\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1028\/300\/400'>\n        <\/div>\n        <div class='item -normal -horizontal' data-scroll data-scroll-speed=\"2\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1041\/400\/300'>\n        <\/div>\n        <div class='item -big -horizontal' data-scroll data-scroll-speed=\"4\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1042\/800\/600'>\n        <\/div>\n        <div class='item -small' data-scroll data-scroll-speed=\"2\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1049\/300\/400'>\n        <\/div>\n        <div class='item -normal -horizontal' data-scroll data-scroll-speed=\"1\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1056\/300\/400'>\n        <\/div>\n        <div class='item -small -horizontal' data-scroll data-scroll-speed=\"3\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1062\/400\/300'>\n        <\/div>\n        <div class='item -big' data-scroll data-scroll-speed=\"1\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1068\/600\/800'>\n        <\/div>\n        \n        <div class='item -normal -horizontal' data-scroll data-scroll-speed=\"2\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1069\/400\/300'>\n        <\/div>\n        <div class='item -normal -horizontal' data-scroll data-scroll-speed=\"1\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1072\/300\/400'>\n        <\/div>\n        <div class='item -small -horizontal' data-scroll data-scroll-speed=\"4\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1075\/400\/300'>\n        <\/div>\n        <div class='item -big' data-scroll data-scroll-speed=\"3\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/1081\/600\/800'>\n        <\/div>\n        <div class='item -normal -horizontal' data-scroll data-scroll-speed=\"2\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/111\/400\/300'>\n        <\/div>\n        <div class='item -small -horizontal' data-scroll data-scroll-speed=\"4\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/129\/400\/300'>\n        <\/div>\n        <div class='item -big' data-scroll data-scroll-speed=\"2\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/137\/600\/800'>\n        <\/div>\n        <div class='item -normal -horizontal' data-scroll data-scroll-speed=\"1\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/141\/300\/400'>\n        <\/div>\n        <div class='item -small -horizontal' data-scroll data-scroll-speed=\"3\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/145\/400\/300'>\n        <\/div>\n        <div class='item -normal' data-scroll data-scroll-speed=\"1\">\n            <img class='image' src='https:\/\/picsum.photos\/id\/147\/300\/400'>\n        <\/div>\n    <\/div>\n<\/div>\n\n<div class='fake-ui'>\n    <div class='logo'><\/div>\n    <div class='nav'>\n        <span class='item'><\/span>\n        <span class='item'><\/span>\n        <span class='item'><\/span>\n    <\/div>\n    <div class='footer'><\/div>\n<\/div>\n<style>\nhtml, body {\n    height: 100%;\n    background: #eee;\n}\n\nbody {\n    overflow: hidden;\n}\n\n.scroll-animations-example {\n    > .scrollsection {\n        padding: 10vh 10vh 10vh 10vmax;\n        min-width: 550vh;\n    }\n\n    > .scrollsection > .item {\n        display: inline-block;\n        position: relative;\n        margin: 0 -30vh 0 3vh;\n    }\n\n    > .scrollsection > .item::before {\n        content: '';\n        display: inline-block;\n        vertical-align: middle;\n        height: 100%;\n    }\n\n    > .scrollsection > .item.-big {\n        height: 80vh;\n        width: 60vh;\n    }\n\n    > .scrollsection > .item.-big.-horizontal {\n        height: 60vh;\n        width: 80vh;\n    }\n\n    > .scrollsection > .item.-normal {\n        height: 60vh;\n        width: 45vh;\n        z-index: 1;\n    }\n\n    > .scrollsection > .item.-normal.-horizontal {\n        height: 45vh;\n        width: 60vh;\n    }\n\n    > .scrollsection > .item.-normal:nth-of-type(3n) {\n        bottom: 5vh;\n    }\n\n    > .scrollsection > .item.-normal:nth-of-type(4n) {\n        bottom: -5vh;\n    }\n\n    > .scrollsection > .item.-small {\n        height: 40vh;\n        width: 30vh;\n        z-index: 2;\n    }\n\n    > .scrollsection > .item.-small.-horizontal {\n        height: 30vh;\n        width: 40vh;\n    }\n\n    > .scrollsection > .item.-small:nth-of-type(3n) {\n        bottom: 13vh;\n    }\n\n    > .scrollsection > .item.-small:nth-of-type(4n) {\n        bottom: -13vh;\n    }\n\n    > .scrollsection > .item > .image {\n        height: 100%;\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        filter: grayscale(1);\n        opacity: 0;\n        pointer-events: none;\n        transform: translateX(0) translateY(0) scale(1);\n        transition: filter .3s ease,\n            opacity 1s ease,\n            transform 1s ease;\n    }\n\n    > .scrollsection > .item:nth-of-type(4n) > .image {\n        transform: translateX(-30vh) translateY(-30vh) scale(.8);\n        transition-delay: 0;\n    }\n\n    > .scrollsection > .item:nth-of-type(4n - 1) > .image {\n        transform: translateX(30vh) translateY(30vh) scale(.8);\n        transition-delay: .05s;\n    }\n\n    > .scrollsection > .item:nth-of-type(4n - 2) > .image {\n        transform: translateX(-30vh) translateY(30vh) scale(.8);\n        transition-delay: .1s;\n    }\n\n    > .scrollsection > .item:nth-of-type(4n - 3) > .image {\n        transform: translateX(-30vh) translateY(-30vh) scale(.8);\n        transition-delay: .15s;\n    }\n\n    > .scrollsection > .item > .image.-active {\n        transform: translateX(0) translateY(0) scale(1);\n        opacity: .8;\n        pointer-events: auto;\n        transition: filter .3s ease,\n            opacity 1s ease,\n            transform 1s ease;\n    }\n\n    > .scrollsection > .item > .image.-clicked {\n        transform: translateX(0) translateY(0) scale(5);\n        opacity: 0;\n        pointer-events: auto;\n        transition: filter .3s ease,\n            opacity 1s ease,\n            transform 1s ease;\n    }\n\n    > .scrollsection > .item > .image.-active:hover {\n        height: 100%;\n        width: 100%;\n        position: absolute;\n        top: 0;\n        left: 0;\n        filter: grayscale(0);\n        opacity: 1;\n        cursor: pointer;\n    }\n}\n\n\n.fake-ui {\n    font-size: 0;\n    \n    > .logo {\n        position: fixed;\n        top: 2vh;\n        left: 2vh;\n        height: 3vh;\n        width: 2.5vh;\n        border: solid 1vh #999;\n    }\n\n    > .nav {\n        position: fixed;\n        top: 2vh;\n        right: 2vh;\n    }\n\n    > .nav > .item {\n        background: #999;\n        display: inline-block;\n        height: 2vh;\n        width: 10vh;\n        margin-left: 2vh;\n    }\n\n    > .footer {\n        position: fixed;\n        bottom: 3vh;\n        left: 50%;\n        transform: translateX(-50%);\n        height: 2vh;\n        width: 40vh;\n        background: #999;\n    }\n}\n<\/style>\n<script>\nclass Example {\n    constructor(options) {\n        this.root = options.root;\n\n        this.init();\n\n        setTimeout(this.showImages.bind(this), 1000);\n    }\n\n    init() {\n        this.scroll = new LocomotiveScroll({\n            el: this.root,\n            direction: 'horizontal',\n            smooth: true,\n            lerp: 0.05,\n            tablet: {\n                smooth: true\n            },\n            smartphone: {\n                smooth: true\n            }\n        });\n\n        this.images = this.root.querySelectorAll('.image');\n\n        [].forEach.call(this.images, (image) => {\n            image.addEventListener('click', () => {\n                image.classList.add('-clicked');\n                this.hideImages();\n            });\n        });\n    }\n\n    showImages() {\n        [].forEach.call(this.images, (image) => {\n            image.classList.remove('-clicked');\n            image.classList.add('-active');\n        });\n    }\n\n    hideImages() {\n        [].forEach.call(this.images, (image) => {\n            image.classList.remove('-active');\n        });\n\n        setTimeout(this.showImages.bind(this), 2000);\n    }\n}\n\n\nwindow.addEventListener('DOMContentLoaded', (event) => {\n    const example = new Example({\n        root: document.querySelector('.scroll-animations-example')\n    });\n});\n<\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "bc5b895f-f595-43e7-b689-c3d4b26a4397": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20505005195541__bc5b895f-f595-43e7-b689-c3d4b26a4397-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20505005195541__bc5b895f-f595-43e7-b689-c3d4b26a4397-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20505005195541__bc5b895f-f595-43e7-b689-c3d4b26a4397-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a105ded7-6355-48fc-a541-490fa51b3149": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20505005195541__bc5b895f-f595-43e7-b689-c3d4b26a4397-column-1",
+        "template--20505005195541__bc5b895f-f595-43e7-b689-c3d4b26a4397-column-2",
+        "template--20505005195541__bc5b895f-f595-43e7-b689-c3d4b26a4397-column-3",
+        "a105ded7-6355-48fc-a541-490fa51b3149"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -165,6 +237,8 @@
     "8de98f62-8b6b-4612-bcdf-d75bf01dbe69",
     "main",
     "c75f610d-abd7-42af-a323-6fd0036ae762",
-    "b72ef93f-3f3e-48b9-ab10-5a6bcb68d8a2"
+    "b72ef93f-3f3e-48b9-ab10-5a6bcb68d8a2",
+    "85047631-d482-416f-a7cd-79cf40996455",
+    "bc5b895f-f595-43e7-b689-c3d4b26a4397"
   ]
 }
