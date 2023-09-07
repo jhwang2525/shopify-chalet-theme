@@ -1117,7 +1117,7 @@ summary::-webkit-details-marker {
   }
 
   .grid--2-col-tablet .grid__item {
-    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  width: calc(20% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
