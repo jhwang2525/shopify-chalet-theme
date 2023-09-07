@@ -195,8 +195,8 @@
         "cell_align": "center",
         "title_mb": 47,
         "cell_width": "16.6666667%",
-        "wrap_around": "true",
-        "mr": 20
+        "wrap_around": "false",
+        "mr": 0
       }
     }
   },
