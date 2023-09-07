@@ -87,13 +87,20 @@
           "settings": {
             "collection": "ss23-beau-jours"
           }
+        },
+        "6eda6860-ae80-4ecf-bef9-9dbdcd3a1a68": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "872f8f02-1be8-4419-8173-14c04893d009",
         "49f11da9-e19f-444a-a0d6-8fb3daa89e54",
         "04e947ce-1c39-4e2a-b1f1-c59803c96250",
-        "85747cf7-078f-4b9e-a7d0-284747c8fc52"
+        "85747cf7-078f-4b9e-a7d0-284747c8fc52",
+        "6eda6860-ae80-4ecf-bef9-9dbdcd3a1a68"
       ],
       "settings": {
         "bg": "",
@@ -105,6 +112,46 @@
         "wrap_around": "false",
         "mr": 0
       }
+    },
+    "26640ebd-a44d-4d81-8cec-1b1bce064d3f": {
+      "type": "collection-list",
+      "blocks": {
+        "template--20505005195541__26640ebd-a44d-4d81-8cec-1b1bce064d3f-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--20505005195541__26640ebd-a44d-4d81-8cec-1b1bce064d3f-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--20505005195541__26640ebd-a44d-4d81-8cec-1b1bce064d3f-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20505005195541__26640ebd-a44d-4d81-8cec-1b1bce064d3f-featured_collection-1",
+        "template--20505005195541__26640ebd-a44d-4d81-8cec-1b1bce064d3f-featured_collection-2",
+        "template--20505005195541__26640ebd-a44d-4d81-8cec-1b1bce064d3f-featured_collection-3"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -112,6 +159,7 @@
     "f7a26089-20f4-44b4-b4d6-34480aac3d88",
     "587968fe-d749-4d68-9f6d-b5c5594234dd",
     "main",
-    "5cb3d12a-70ec-49e0-a5af-7b8d9ee38321"
+    "5cb3d12a-70ec-49e0-a5af-7b8d9ee38321",
+    "26640ebd-a44d-4d81-8cec-1b1bce064d3f"
   ]
 }
