@@ -1,0 +1,103 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style><!--
+.accordion {
+background-color: #ffffff;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 14px;
+font-family: montserrat;
+transition: 0.7s;
+}
+
+.active, .accordion:hover {
+background-color: #ffffff;
+}
+
+.accordion svg {
+font-weight: bold;
+float: right;
+margin-left: 5px;
+width: 10px;
+}
+
+.active svg {
+transform: rotate(180deg);
+}
+
+.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.8s ease-out;
+border-bottom: 3px solid transparent;
+}
+--></style>
+<button class="accordion">DESCRIPTION <svg viewBox="0 0 9 9" class="icon icon-chevron-down" role="presentation" aria-hidden="true" focusable="false"><path fill="#fff" d="M8.542 2.558a.625.625 0 0 1 0 .884l-3.6 3.6a.626.626 0 0 1-.884 0l-3.6-3.6a.625.625 0 1 1 .884-.884L4.5 5.716l3.158-3.158a.625.625 0 0 1 .884 0z"></path></svg> </button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">Section 2 <svg viewBox="0 0 9 9" class="icon icon-chevron-down" role="presentation" aria-hidden="true" focusable="false"><path fill="#fff" d="M8.542 2.558a.625.625 0 0 1 0 .884l-3.6 3.6a.626.626 0 0 1-.884 0l-3.6-3.6a.625.625 0 1 1 .884-.884L4.5 5.716l3.158-3.158a.625.625 0 0 1 .884 0z"></path></svg> </button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button class="accordion">Section 3 <svg viewBox="0 0 9 9" class="icon icon-chevron-down" role="presentation" aria-hidden="true" focusable="false"><path fill="#fff" d="M8.542 2.558a.625.625 0 0 1 0 .884l-3.6 3.6a.626.626 0 0 1-.884 0l-3.6-3.6a.625.625 0 1 1 .884-.884L4.5 5.716l3.158-3.158a.625.625 0 0 1 .884 0z"></path></svg> </button>
+<div class="panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+var last;
+var alwaysOneOpen = true;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    // If the same accordion was clicked, toggle it
+    if (last === this && !alwaysOneOpen) {
+      toggleAccordion(last);
+    } else {
+      // If another accordion was open, close it
+      if (last) {
+        closeAccordion(last);
+      }
+      // Open clicked accordion
+      last = this;
+      openAccordion(last);
+    }
+  };
+}
+
+var closeAccordion = function(acc) {
+  acc.classList.remove("active");
+  var panel = acc.nextElementSibling;
+    panel.classList.remove("active");
+  panel.style.maxHeight = null;
+}
+
+var openAccordion = function(acc) {
+  acc.classList.add("active");
+  var panel = acc.nextElementSibling;
+    panel.classList.add("active");
+  panel.style.maxHeight = panel.scrollHeight + "px";
+}
+
+var toggleAccordion = function(acc) {
+  last.classList.toggle("active");
+  var panel = last.nextElementSibling;
+  panel.classList.toggle("active");
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+};
+
+last = acc[0];
+toggleAccordion(last);
+</script>
