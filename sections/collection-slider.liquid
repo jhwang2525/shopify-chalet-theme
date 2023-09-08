@@ -1,16 +1,6 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 
-{%- liquid
-  assign ratio = 1
-  if card_collection.featured_image and media_aspect_ratio == 'portrait'
-    assign ratio = 0.8
-  elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
-    assign ratio = card_collection.featured_image.aspect_ratio
-  endif
-  if ratio == 0 or ratio == nil
-    assign ratio = 1
-  endif
--%}
+
 {%- style -%}
   .dawn-collection-slider {
     max-width: 1600px;
