@@ -210,7 +210,8 @@
       ],
       "custom_css": [
         ".flickity-prev-next-button.next {right: -30px;}",
-        ".flickity-prev-next-button.previous {left: -30px;}"
+        ".flickity-prev-next-button.previous {left: -30px;}",
+        ".flickity-prev-next-button {top: 35%;}"
       ],
       "settings": {
         "title": "",
