@@ -1,12 +1,350 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign ratio = 1
+  if card_collection.featured_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
+    assign ratio = card_collection.featured_image.aspect_ratio
+  endif
+  if ratio == 0 or ratio == nil
+    assign ratio = 1
+  endif
+-%}
+{%- style -%}
+  .dawn-collection-slider {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 20px;
+    padding-bottom: 32px;
+    margin-top: 55px;
   }
-{% endschema %}
+  .dawn-collection-slider img {
+      width: 100%;
+  }
+  .dawn-collection-slider .carousel-cell {
+    background: #fff;
+    border-radius: 16px;
+    margin: auto;
+    padding: 18px;
+    margin: 12px;
+    width: calc(32% - 10px);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+  }
+  .dawn-collection-slider a {
+    color: black;
+   	text-decoration: none; 
+  }
+  .dawn-collection-slider a .title:hover {
+   	text-decoration: underline; 
+  }
+  .dawn-collection-slider a .title {
+   	margin: 0px;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .dawn-collection-slider .flickity-button.flickity-prev-next-button.previous, 
+  .dawn-collection-slider .flickity-button.flickity-prev-next-button.next {
+  	background: transparent;
+    color: black;
+  }
+  .dawn-collection-slider:focus-visible, .dawn-collection-slider .carousel:focus-visible {
+   	outline: unset;
+    outline-offset: unset;
+    box-shadow: unset; 
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  .dawn-collection-slider .card__media {
+    width: 100%;
+  }
+  @media only screen and ( max-width: 767px ) {
+    .dawn-collection-slider .carousel-cell {
+      width: calc(50% - 10px);
+    }
+  }
+  @media only screen and ( max-width: 479px ) {
+    .dawn-collection-slider .carousel-cell {
+      width: calc(100% - 10px);
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+    <div class="color-{{ section.settings.color_scheme }} gradient">
+      <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
+        {%- unless section.settings.title == blank -%}
+        <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+          <h2 class="collection-list-title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
 
-{% stylesheet %}
-{% endstylesheet %}
+          {%- if section.settings.show_view_all and show_mobile_slider -%}
+          <a href="{{ routes.collections_url }}" class="link underlined-link large-up-hide">{{ 'sections.collection_list.view_all' | t }}</a>
+          {%- endif -%}
+        </div>
+        {%- endunless -%}
 
-{% javascript %}
-{% endjavascript %}
+
+        <div class="dawn-collection-slider">
+          <div class="carousel" data-flickity='{ "wrapAround": true }'>
+
+
+            {% for block in section.blocks %}
+            {% assign collection = block.settings.collection %}
+            <div class="carousel-cell"
+                 style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"     
+                 >
+
+              <div class="card">
+                <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 100.0%;"><div class="card__media">
+                  <div class="media media--transparent media--hover-effect">
+                    <img srcset="{{ collection.featured_image | img_url: 'master' }}" 
+                      sizes="(min-width: 1200px) 366px,
+                             (min-width: 750px) calc((100vw - 10rem) / 2),
+                              calc(100vw - 3rem)" alt="Collection 03" height="800" width="800" loading="lazy" class="motion-reduce">
+                  </div>
+                  </div><div class="card__content">        
+                  <div class="card__information">
+                    <h3 class="card__heading">
+                      <a href="{{ collection.url }}" class="full-unstyled-link">{{ collection.title }}
+                      </a>
+                    </h3><p class="card__caption">{{ collection.title }}<span class="icon-wrap">&nbsp;<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+                    </path></svg>
+                    </span>
+                    </p></div>   
+                  </div>
+                </div>
+
+
+                <div class="card__content">
+                  <div class="card__information">
+                    <h3 class="card__heading">
+                      <a href="{{ collection.url }}" class="full-unstyled-link">{{ collection.title }}<span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+                        </path></svg>
+                        </span>
+                      </a>
+                    </h3></div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <!--- Coded by keiwords.com --->
+        </div>
+
+        {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
+        <div class="center collection-list-view-all{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
+          <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+{% assign nav_range = section.settings.columns_desktop %}
+{% style %}
+	@media only screen and ( min-width: 1201px ) {
+		{% if nav_range == 2 %}
+        .dawn-collection-slider .carousel-cell {
+            width: calc(49% - 10px);
+        }
+		{% elsif nav_range == 3 %}
+        .dawn-collection-slider .carousel-cell {
+          width: calc(32% - 10px);
+        }
+		{% elsif nav_range == 4 %}
+        .dawn-collection-slider .carousel-cell {
+          width: calc(24% - 10px);
+         }
+		{% endif %}
+    }
+    .flickity-page-dots .dot {
+    	background: {{ section.settings.arrow_color }};
+    }
+    .flickity-button-icon {
+    	color: {{ section.settings.arrow_color }};
+    }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Collection slider",
+  "tag": "section",
+  "class": "section section-collection-list",
+  "settings": [
+	{
+      "type": "text",
+      "id": "title",
+      "default": "Collection slider",
+      "label": "t:sections.collection-list.settings.title.label"
+    },
+	{
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Change color of the pagination|navigation|scrollbar"
+    },
+	{
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info"
+    },
+	{
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": false,
+      "label": "t:sections.collection-list.settings.show_view_all.label"
+    },
+	{
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.collection-list.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.collection-list.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.collection-list.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "square",
+      "label": "t:sections.collection-list.settings.image_ratio.label",
+      "info": "t:sections.collection-list.settings.image_ratio.info"
+    },
+	{
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 3,
+      "label": "Number of columns on desktop"
+    },
+	{
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+	{
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ] ,
+  	"blocks": [
+	{
+        "type": "card",
+        "name": "Collection card",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Choose the collection you want to displayed"
+          }
+    	]
+	}
+  ] ,
+  "presets": [
+    {
+      "name": "Collection slider",
+      "category":"Custom"
+    }
+  ]
+}
+{% endschema %}  
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+   var elem = document.querySelector('.dawn-collection-slider .carousel');
+   var flkty = new Flickity( elem, {
+     contain: true,
+     imagesLoaded: true,
+     lazyLoad: 2,
+     wrapAround: true,
+     pageDots: false,
+   });
+   {% if request.design_mode %}
+   document.addEventListener("shopify:section:load", function(event) {
+     var elem = document.querySelector('.dawn-collection-slider .carousel');
+     var flkty = new Flickity( elem, {
+       contain: true,
+       imagesLoaded: true,
+       lazyLoad: 2,
+       wrapAround: true,
+       pageDots: false,
+     });
+   });
+   {% endif %}
+</script>
