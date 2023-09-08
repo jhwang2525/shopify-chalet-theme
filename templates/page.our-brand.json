@@ -138,6 +138,80 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "6d9f0d40-ca5c-4316-9a75-b480451b221c": {
+      "type": "collection-slider",
+      "blocks": {
+        "37c6d124-17c4-4e4b-ace6-eff6acdc561a": {
+          "type": "card",
+          "settings": {
+            "collection": "fw23-chalet"
+          }
+        },
+        "e3861429-26c6-42f3-bc23-35218d18499e": {
+          "type": "card",
+          "settings": {
+            "collection": "fw23-beau-jours"
+          }
+        },
+        "bb470fa5-ca22-40bd-8bb0-c06831c043d2": {
+          "type": "card",
+          "settings": {
+            "collection": "ss23-chalet"
+          }
+        },
+        "c9b806fc-c596-4be9-a40b-c3afedd7113c": {
+          "type": "card",
+          "settings": {
+            "collection": "ss23-beau-jours"
+          }
+        },
+        "61746dc3-aea5-46f0-927f-18bfde3ce1fb": {
+          "type": "card",
+          "settings": {
+            "collection": "fw22-chalet"
+          }
+        },
+        "fe42853f-bfa4-45fc-99d3-fd7305bdfa86": {
+          "type": "card",
+          "settings": {
+            "collection": "fw22-beau-jours"
+          }
+        },
+        "1c273f0a-0707-4de6-80b2-7b233801962e": {
+          "type": "card",
+          "settings": {
+            "collection": "ss22-chalet"
+          }
+        },
+        "9b22b208-5114-420b-bbb5-8664306a3688": {
+          "type": "card",
+          "settings": {
+            "collection": "ss22-beau-jours"
+          }
+        }
+      },
+      "block_order": [
+        "37c6d124-17c4-4e4b-ace6-eff6acdc561a",
+        "e3861429-26c6-42f3-bc23-35218d18499e",
+        "bb470fa5-ca22-40bd-8bb0-c06831c043d2",
+        "c9b806fc-c596-4be9-a40b-c3afedd7113c",
+        "61746dc3-aea5-46f0-927f-18bfde3ce1fb",
+        "fe42853f-bfa4-45fc-99d3-fd7305bdfa86",
+        "1c273f0a-0707-4de6-80b2-7b233801962e",
+        "9b22b208-5114-420b-bbb5-8664306a3688"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "arrow_color": "",
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -145,6 +219,7 @@
     "f7a26089-20f4-44b4-b4d6-34480aac3d88",
     "587968fe-d749-4d68-9f6d-b5c5594234dd",
     "main",
-    "26640ebd-a44d-4d81-8cec-1b1bce064d3f"
+    "26640ebd-a44d-4d81-8cec-1b1bce064d3f",
+    "6d9f0d40-ca5c-4316-9a75-b480451b221c"
   ]
 }
