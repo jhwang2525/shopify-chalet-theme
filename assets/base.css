@@ -3211,6 +3211,8 @@ max-width: 100%;
 		display: none !important;
 	}
 }
-.collection-list .card__text {
-display: none;
+.collection-list-wrapper .card__content{
+
+display:none;
+
 }
