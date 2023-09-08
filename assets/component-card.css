@@ -103,6 +103,7 @@
 
 .card__inner {
   width: 100%;
+  --ratio-percent: 149.97644842204426%;
 }
 
 .card--media .card__inner .card__content {
