@@ -3211,4 +3211,6 @@ max-width: 100%;
 		display: none !important;
 	}
 }
-
+.collection-list .card__text {
+display: none;
+}
