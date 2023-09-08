@@ -201,6 +201,10 @@
         "1c273f0a-0707-4de6-80b2-7b233801962e",
         "9b22b208-5114-420b-bbb5-8664306a3688"
       ],
+      "custom_css": [
+        ".flickity-prev-next-button.next {right: -20px;}",
+        ".flickity-prev-next-button.previous{left:-20px;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
