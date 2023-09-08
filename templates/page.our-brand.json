@@ -189,6 +189,12 @@
           "settings": {
             "collection": "ss22-beau-jours"
           }
+        },
+        "350e8d3c-6bff-46e8-aa2a-636ae1af4d84": {
+          "type": "card",
+          "settings": {
+            "collection": "fw21-beau-jours"
+          }
         }
       },
       "block_order": [
@@ -199,11 +205,12 @@
         "61746dc3-aea5-46f0-927f-18bfde3ce1fb",
         "fe42853f-bfa4-45fc-99d3-fd7305bdfa86",
         "1c273f0a-0707-4de6-80b2-7b233801962e",
-        "9b22b208-5114-420b-bbb5-8664306a3688"
+        "9b22b208-5114-420b-bbb5-8664306a3688",
+        "350e8d3c-6bff-46e8-aa2a-636ae1af4d84"
       ],
       "custom_css": [
         ".flickity-prev-next-button.next {right: -20px;}",
-        ".flickity-prev-next-button.previous{left:-20px;}"
+        ".flickity-prev-next-button.previous {left: -20px;}"
       ],
       "settings": {
         "title": "",
