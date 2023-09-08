@@ -3215,3 +3215,11 @@ max-width: 100%;
 .collection-list .card__information a.full-unstyled-link {
 color: white;
 }
+.carousel-cell {
+    display: flex;
+    align-items: stretch;
+    min-height: 100%;
+}
+.carousel .flickity-slider {
+	height: 100%;
+}
