@@ -123,6 +123,9 @@
         "68150565-8d3d-47c6-a4f7-b4eba99ddfb5",
         "00915339-6326-44f8-aa30-985708861d34"
       ],
+      "custom_css": [
+        ".card__content{display:none;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
