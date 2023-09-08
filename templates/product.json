@@ -116,20 +116,10 @@
         "padding_top": 92,
         "padding_bottom": 24
       }
-    },
-    "b2c285d8-15fe-4887-8841-fcb2b2a499bf": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<style><!--\n.accordion {\nbackground-color: #ffffff;\ncolor: #444;\ncursor: pointer;\npadding: 18px;\nwidth: 100%;\nborder: none;\ntext-align: left;\noutline: none;\nfont-size: 14px;\nfont-family: montserrat;\ntransition: 0.7s;\n}\n\n.active, .accordion:hover {\nbackground-color: #ffffff;\n}\n\n.accordion svg {\nfont-weight: bold;\nfloat: right;\nmargin-left: 5px;\nwidth: 10px;\n}\n\n.active svg {\ntransform: rotate(180deg);\n}\n\n.panel {\npadding: 0 18px;\nbackground-color: white;\nmax-height: 0;\noverflow: hidden;\ntransition: max-height 0.8s ease-out;\nborder-bottom: 3px solid transparent;\n}\n--><\/style>\n<button class=\"accordion\">DESCRIPTION <svg viewBox=\"0 0 9 9\" class=\"icon icon-chevron-down\" role=\"presentation\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"#fff\" d=\"M8.542 2.558a.625.625 0 0 1 0 .884l-3.6 3.6a.626.626 0 0 1-.884 0l-3.6-3.6a.625.625 0 1 1 .884-.884L4.5 5.716l3.158-3.158a.625.625 0 0 1 .884 0z\"><\/path><\/svg> <\/button>\n<div class=\"panel\">\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<\/div>\n<button class=\"accordion\">Section 2 <svg viewBox=\"0 0 9 9\" class=\"icon icon-chevron-down\" role=\"presentation\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"#fff\" d=\"M8.542 2.558a.625.625 0 0 1 0 .884l-3.6 3.6a.626.626 0 0 1-.884 0l-3.6-3.6a.625.625 0 1 1 .884-.884L4.5 5.716l3.158-3.158a.625.625 0 0 1 .884 0z\"><\/path><\/svg> <\/button>\n<div class=\"panel\">\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<\/div>\n<button class=\"accordion\">Section 3 <svg viewBox=\"0 0 9 9\" class=\"icon icon-chevron-down\" role=\"presentation\" aria-hidden=\"true\" focusable=\"false\"><path fill=\"#fff\" d=\"M8.542 2.558a.625.625 0 0 1 0 .884l-3.6 3.6a.626.626 0 0 1-.884 0l-3.6-3.6a.625.625 0 1 1 .884-.884L4.5 5.716l3.158-3.158a.625.625 0 0 1 .884 0z\"><\/path><\/svg> <\/button>\n<div class=\"panel\">\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>\n<\/div>\n<script>\nvar acc = document.getElementsByClassName(\"accordion\");\nvar i;\nvar last;\nvar alwaysOneOpen = true;\n\nfor (i = 0; i < acc.length; i++) {\n  acc[i].onclick = function() {\n    \/\/ If the same accordion was clicked, toggle it\n    if (last === this && !alwaysOneOpen) {\n      toggleAccordion(last);\n    } else {\n      \/\/ If another accordion was open, close it\n      if (last) {\n        closeAccordion(last);\n      }\n      \/\/ Open clicked accordion\n      last = this;\n      openAccordion(last);\n    }\n  };\n}\n\nvar closeAccordion = function(acc) {\n  acc.classList.remove(\"active\");\n  var panel = acc.nextElementSibling;\n    panel.classList.remove(\"active\");\n  panel.style.maxHeight = null;\n}\n\nvar openAccordion = function(acc) {\n  acc.classList.add(\"active\");\n  var panel = acc.nextElementSibling;\n    panel.classList.add(\"active\");\n  panel.style.maxHeight = panel.scrollHeight + \"px\";\n}\n\nvar toggleAccordion = function(acc) {\n  last.classList.toggle(\"active\");\n  var panel = last.nextElementSibling;\n  panel.classList.toggle(\"active\");\n  if (panel.style.maxHeight) {\n    panel.style.maxHeight = null;\n  } else {\n    panel.style.maxHeight = panel.scrollHeight + \"px\";\n  }\n};\n\nlast = acc[0];\ntoggleAccordion(last);\n<\/script>",
-        "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "b2c285d8-15fe-4887-8841-fcb2b2a499bf"
+    "related-products"
   ]
 }
