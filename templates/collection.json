@@ -2,6 +2,7 @@
   "sections": {
     "ecb8cf20-1483-47b5-820c-5bc0dd6b9bc3": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/B0001885.jpg",
         "image_overlay_opacity": 0,
