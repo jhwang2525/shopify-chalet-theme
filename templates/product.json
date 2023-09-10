@@ -50,7 +50,7 @@
           "settings": {
             "open": true,
             "heading": "Fabric",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "<p>{{ product.metafields.custom.fabric | metafield_tag }}<\/p>",
             "page": ""
           }
@@ -60,7 +60,7 @@
           "settings": {
             "open": false,
             "heading": "Details",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "<p>Prices vary between XS-XL & 1X-3X<\/p><p>The model is wearing a Small<\/p><p>Height: 5'9\"<\/p><p>Waist: 25<\/p><p>Hips: 35a<\/p><p>Bust: 34<\/p>",
             "page": ""
           }
