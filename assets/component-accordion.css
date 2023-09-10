@@ -2,6 +2,7 @@
 <style><!--
 .accordion {
 background-color: #ffffff;
+border-bottom:1px solid #eceff3;
 color: #444;
 cursor: pointer;
 padding: 18px;
