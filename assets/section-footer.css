@@ -14,7 +14,7 @@
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
-    argin-right: 12rem;
+    margin-right: 12rem;
     padding-top: 25px;
 }
   }
