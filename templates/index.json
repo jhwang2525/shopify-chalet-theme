@@ -167,6 +167,9 @@
         "22c6fcd3-8711-48e9-8a81-a83ac20bac49",
         "e45bb404-8bad-4f8f-8120-8afce96ef59f"
       ],
+      "custom_css": [
+        ".slider-buttons{display:none;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
