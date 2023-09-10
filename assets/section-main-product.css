@@ -554,7 +554,7 @@ a.product__text {
 }
 
 .product__media-item--variant:first-child {
-  display: block;
+  display: none;
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
