@@ -13,7 +13,7 @@
 
 {%- liquid
   if section.settings.hide_variants and variant_images.size == product.media.size
-    assign single_media_visible = true
+    assign single_media_visible = false
   endif
 
   assign media_count = product.media.size
