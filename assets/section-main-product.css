@@ -545,7 +545,7 @@ a.product__text {
   }
 
   .product-media-modal__content > .product__media-item--variant:first-child {
-    display: none;
+    display: block;
   }
 }
 
@@ -554,7 +554,7 @@ a.product__text {
 }
 
 .product__media-item--variant:first-child {
-  display: none;
+  display: block;
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
