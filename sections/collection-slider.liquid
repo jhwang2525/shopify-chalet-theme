@@ -85,7 +85,7 @@
           <h2 class="collection-list-title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
 
           {%- if section.settings.show_view_all and show_mobile_slider -%}
-          <a href="{{ routes.collections_url }}" class="link underlined-link large-up-hide">{{ 'sections.collection_list.view_all' | t }}</a>
+          <a href="{{ null }}" class="link underlined-link large-up-hide">{{ 'sections.collection_list.view_all' | t }}</a>
           {%- endif -%}
         </div>
         {%- endunless -%}
