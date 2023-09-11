@@ -66,6 +66,9 @@
         "6132e0fc-b4a8-43cb-9227-798d47fc06ae",
         "f4550abe-a342-418a-a74d-248cad95ce9a"
       ],
+      "custom_css": [
+        ".grid{column-gap: 25px;}"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": false,
