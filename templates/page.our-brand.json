@@ -210,9 +210,9 @@
         "350e8d3c-6bff-46e8-aa2a-636ae1af4d84"
       ],
       "custom_css": [
-        ".flickity-prev-next-button.next {right: 0%;}",
-        ".flickity-prev-next-button.previous {left: 0%;}",
-        ".flickity-prev-next-button {top: 40%;}"
+        ".flickity-prev-next-button.next {right: -5%;}",
+        ".flickity-prev-next-button.previous {left: -5%;}",
+        ".flickity-prev-next-button {top: 40%; width: 18px; height: 22px;}"
       ],
       "settings": {
         "title": "",
