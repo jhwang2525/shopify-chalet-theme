@@ -240,7 +240,8 @@
       "custom_css": [
         "1.flickity-prev-next-button.next {right: 1%;}",
         ".flickity-prev-next-button.previous {left: 1%;}",
-        ".flickity-prev-next-button {top: 40%; width: 18px; height: 22px; color: white;}"
+        ".flickity-prev-next-button {top: 40%; width: 18px; height: 22px; color: white;}",
+        ".flickity-viewport{overflow:visible;}"
       ],
       "settings": {
         "title": "",
