@@ -66,7 +66,7 @@
         >
           <div id="GalleryViewer-{{ section.id }}" class="product__media-list">
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
-              {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+              {%- assign media = product.featured_media -%}
               <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
                 {% render 'product-thumbnail',
                   media: media,
@@ -88,7 +88,7 @@
             -%}
             {%- for media in product.media -%}
               {%- if media_to_render contains media.id
-                and media.id != product.selected_or_first_available_variant.featured_media.id
+                and media.id != product.featured_media
               -%}
                 <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail',
@@ -360,7 +360,7 @@
           >
             <div id="GalleryViewer-{{ section.id }}-right" class="product__media-list">
               {%- if product.selected_or_first_available_variant.featured_media != null -%}
-                {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+                {%- assign media = product.featured_media -%}
                 <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail',
                     media: media,
