@@ -1046,12 +1046,6 @@ summary::-webkit-details-marker {
   column-gap: var(--grid-mobile-horizontal-spacing);
   row-gap: var(--grid-mobile-vertical-spacing);
 }
-
-@media screen and (min-width: 750px) {
-  .grid {
-    column-gap: 10rem;
-    row-gap: var(--grid-desktop-vertical-spacing);
-  }
 }
 @media screen and (min-width: 1024px){
 .collection-list.grid {
