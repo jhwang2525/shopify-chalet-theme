@@ -196,6 +196,30 @@
           "settings": {
             "collection": "fw21-beau-jours"
           }
+        },
+        "efa869c5-5df2-4829-88bc-e1a2cddec7c7": {
+          "type": "card",
+          "settings": {
+            "collection": "ss22-beau-jours-1"
+          }
+        },
+        "45b91aa5-2b06-45a9-9bae-3592dfe9ac1d": {
+          "type": "card",
+          "settings": {
+            "collection": "ss21-chalet"
+          }
+        },
+        "e8d01c93-ad20-4b57-920d-6f97e084d619": {
+          "type": "card",
+          "settings": {
+            "collection": "ss20-chalet"
+          }
+        },
+        "ad7d4f43-ca8a-468b-9e20-e675b364e798": {
+          "type": "card",
+          "settings": {
+            "collection": "ss20-beau-jours"
+          }
         }
       },
       "block_order": [
@@ -207,7 +231,11 @@
         "fe42853f-bfa4-45fc-99d3-fd7305bdfa86",
         "1c273f0a-0707-4de6-80b2-7b233801962e",
         "9b22b208-5114-420b-bbb5-8664306a3688",
-        "350e8d3c-6bff-46e8-aa2a-636ae1af4d84"
+        "350e8d3c-6bff-46e8-aa2a-636ae1af4d84",
+        "efa869c5-5df2-4829-88bc-e1a2cddec7c7",
+        "45b91aa5-2b06-45a9-9bae-3592dfe9ac1d",
+        "e8d01c93-ad20-4b57-920d-6f97e084d619",
+        "ad7d4f43-ca8a-468b-9e20-e675b364e798"
       ],
       "custom_css": [
         "1.flickity-prev-next-button.next {right: 1%;}",
