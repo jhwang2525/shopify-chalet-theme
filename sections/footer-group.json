@@ -67,7 +67,7 @@
         "f4550abe-a342-418a-a74d-248cad95ce9a"
       ],
       "custom_css": [
-        ".grid{column-gap: 25px;}"
+        ".grid {column-gap: 5rem;}"
       ],
       "settings": {
         "color_scheme": "background-1",
