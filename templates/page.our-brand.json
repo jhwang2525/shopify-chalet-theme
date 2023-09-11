@@ -143,12 +143,6 @@
     "6d9f0d40-ca5c-4316-9a75-b480451b221c": {
       "type": "collection-slider",
       "blocks": {
-        "37c6d124-17c4-4e4b-ace6-eff6acdc561a": {
-          "type": "card",
-          "settings": {
-            "collection": "fw23-chalet"
-          }
-        },
         "e3861429-26c6-42f3-bc23-35218d18499e": {
           "type": "card",
           "settings": {
@@ -220,10 +214,15 @@
           "settings": {
             "collection": "ss20-beau-jours"
           }
+        },
+        "37c6d124-17c4-4e4b-ace6-eff6acdc561a": {
+          "type": "card",
+          "settings": {
+            "collection": "fw23-chalet"
+          }
         }
       },
       "block_order": [
-        "37c6d124-17c4-4e4b-ace6-eff6acdc561a",
         "e3861429-26c6-42f3-bc23-35218d18499e",
         "bb470fa5-ca22-40bd-8bb0-c06831c043d2",
         "c9b806fc-c596-4be9-a40b-c3afedd7113c",
@@ -235,7 +234,8 @@
         "efa869c5-5df2-4829-88bc-e1a2cddec7c7",
         "45b91aa5-2b06-45a9-9bae-3592dfe9ac1d",
         "e8d01c93-ad20-4b57-920d-6f97e084d619",
-        "ad7d4f43-ca8a-468b-9e20-e675b364e798"
+        "ad7d4f43-ca8a-468b-9e20-e675b364e798",
+        "37c6d124-17c4-4e4b-ace6-eff6acdc561a"
       ],
       "custom_css": [
         "1.flickity-prev-next-button.next {right: 1%;}",
