@@ -3213,7 +3213,9 @@ color: white;
 @media screen and (min-width: 749px){
 .flickity-prev-next-button.next{
   right: -15em;
-}
+}}
+
+@media screen and (min-width: 749px){
   .flickity-prev-next-button.previous{
     left: -15em;
   }
