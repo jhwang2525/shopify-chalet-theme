@@ -3209,3 +3209,12 @@ max-width: 100%;
 .collection-list .card__information a.full-unstyled-link {
 color: white;
 }
+
+@media screen and (max-width: 749px){
+.flickity-prev-next-button.next{
+  right: -15em;
+}
+  .flickity-prev-next-button.previous{
+    left: -15em;
+  }
+}
