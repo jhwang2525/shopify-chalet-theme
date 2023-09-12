@@ -238,8 +238,6 @@
         "37c6d124-17c4-4e4b-ace6-eff6acdc561a"
       ],
       "custom_css": [
-        "1.flickity-prev-next-button.next {right: 1%;}",
-        ".flickity-prev-next-button.previous {left: 1%;}",
         ".flickity-prev-next-button {top: 40%; width: 18px; height: 22px; color: white;}",
         "@media screen and (min-width: 749px) {.flickity-viewport {overflow: visible; }}"
       ],
