@@ -3210,7 +3210,7 @@ max-width: 100%;
 color: white;
 }
 
-@media screen and (max-width: 749px){
+@media screen and (min-width: 749px){
 .flickity-prev-next-button.next{
   right: -15em;
 }
